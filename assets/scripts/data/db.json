@@ -1,0 +1,213 @@
+{
+  "users": [],
+  "practiceArea": [
+    {
+      "id": "1",
+      "shortName": "bussiness",
+      "title": "قانون تجارت و کسب و کار",
+      "description": null,
+      "logoHref": "briefcase"
+    },
+    {
+      "id": "2",
+      "shortName": "construction",
+      "title": "قانون ساخت و ساز",
+      "description": null,
+      "logoHref": "building"
+    },
+    {
+      "id": "3",
+      "shortName": "accident",
+      "title": "قانون تصادفات رانندگی",
+      "description": null,
+      "logoHref": "truck"
+    },
+    {
+      "id": "4",
+      "shortName": "wrongful-death",
+      "title": "قانون قتل غیر عمد",
+      "description": null,
+      "logoHref": "grave"
+    },
+    {
+      "id": "5",
+      "shortName": "criminal",
+      "title": "قانون جرایم کیفری",
+      "description": null,
+      "logoHref": "crime"
+    },
+    {
+      "id": "6",
+      "shortName": "family",
+      "title": "قانون خانواده",
+      "description": null,
+      "logoHref": "group-people"
+    }
+  ],
+  "client-comment": [
+    {
+      "id": "1",
+      "name": "محمد متین شاهملکی",
+      "job": "برنامه نویس ارشد",
+      "avatarHref": "client1-avatar.png"
+    },
+    {
+      "id": "2",
+      "name": "الهام ملکی",
+      "job": "طراح داخلی",
+      "avatarHref": "client2-avatar.png"
+    },
+    {
+      "id": "3",
+      "name": "سایدا ایزدجو",
+      "job": "توسعه دهنده",
+      "avatarHref": "client3-avatar.png"
+    },
+    {
+      "id": "4",
+      "name": "مهدیه برخورداری",
+      "job": "مهندس IT",
+      "avatarHref": "client4-avatar.png"
+    }
+  ],
+  "lawyer-team": [
+    {
+      "id": "1",
+      "name": "احسان میر زاد",
+      "position": "وکیل مهاجرتی",
+      "profileHref": "./assets/images/lawyer-one.jpg"
+    },
+    {
+      "id": "2",
+      "name": "نازنین محمد زاده",
+      "position": "وکیل ارشد",
+      "profileHref": "./assets/images/lawyer-two.jpg"
+    },
+    {
+      "id": "3",
+      "name": "عباس داورزنی",
+      "position": "وکیل جنایی",
+      "profileHref": "./assets/images/lawyer-three.jpg"
+    }
+  ],
+  "case-success": [
+    {
+      "id": "1",
+      "category": "طلاق و پرونده خانواده",
+      "percent": 75
+    },
+    {
+      "id": "2",
+      "category": "دارایی و سازندگی",
+      "percent": 80
+    },
+    {
+      "id": "3",
+      "category": "امور بانکی و مالی",
+      "percent": 75
+    },
+    {
+      "id": "4",
+      "category": "جرایم کیفری",
+      "percent": 90
+    }
+  ],
+  "messages": [
+    {
+      "id": "3495",
+      "userName": "امیرحسین دیناد",
+      "userEmail": "doise2202@gmail.com",
+      "userPhone": "0919456823",
+      "userSubject": "پرونده سایبری",
+      "message": "پیام تستی از کاربر"
+    },
+    {
+      "id": "8ece",
+      "userName": "سایدا ایزدجو",
+      "userEmail": "arammoon@gmail.com",
+      "userPhone": "09194102875",
+      "userSubject": "تغییر اسم شناسنامه",
+      "message": "سلام . پیام تستی"
+    },
+    {
+      "id": "b25e",
+      "userName": "سایدا ایزدجو",
+      "userEmail": "arammoon@gmail.com",
+      "userPhone": "09194102875",
+      "userSubject": "تغییر اسم شناسنامه",
+      "message": "پیام تستی شماره ۲"
+    },
+    {
+      "id": "d02a",
+      "userName": "نیما محمدی",
+      "userEmail": "nima_mohammadi@gmail.com",
+      "userPhone": "0936256365",
+      "userSubject": "مهریه",
+      "message": "سلام یه وقت برای پرونده مهریه و طلاق میخوام . از کجا باید هماهنگ کنم ؟"
+    },
+    {
+      "id": "a559",
+      "userName": "ابول کمال",
+      "userEmail": "abolfazlkamal714@gmail.com",
+      "userPhone": "09304669010",
+      "userSubject": "کلاهبرداری",
+      "message": "من cp کالاف خریدم  . ازم کلاهبرداری شد . چجوری شکایت کنم ؟",
+      "isAnswered": false,
+      "answerBody": {
+        "creator": "Mahdi",
+        "answerBody": null
+      }
+    },
+    {
+      "id": "a5ad",
+      "userName": "امیرحسین سروگل",
+      "userEmail": "amirhosseinsarvgol@gmail.co",
+      "userPhone": "09109247155",
+      "userSubject": "حقوق مدنی",
+      "message": "پیام تستی",
+      "isAnswered": false,
+      "answerBody": {
+        "creator": "Mahdi",
+        "answerBody": null
+      }
+    }
+  ],
+  "recent-blog": [
+    {
+      "id": "1",
+      "createdAt": null,
+      "title": "جلوگیری از نقض بیشتر صلح در ایالات متحده",
+      "cover": "./assets/images/blogs/blog-2.png"
+    },
+    {
+      "id": "2",
+      "createdAt": null,
+      "title": "عدم اجرای شرایط یک قرارداد تجاری",
+      "cover": "./assets/images/blogs/blog-3.png"
+    },
+    {
+      "id": "3",
+      "createdAt": null,
+      "title": "سواری انفرادی برای نجات سازمان های غیرانتفاعی محبوبش",
+      "cover": "./assets/images/blogs/blog-4.png"
+    },
+    {
+      "id": "4",
+      "createdAt": null,
+      "title": "پرونده به نمایندگی از کارگر مجروح یدک کش تشکیل شد",
+      "cover": "./assets/images/blogs/blog-5.png"
+    },
+    {
+      "id": "5",
+      "createdAt": null,
+      "title": "نحوه انتخاب نمایندگی قانونی توسط شرکت ها",
+      "cover": "./assets/images/blogs/blog-6.png"
+    },
+    {
+      "id": "6",
+      "createdAt": null,
+      "title": "نحوه کار حرفه ای های حقوقی:اشیاء دفاعی در این رویداد",
+      "cover": "./assets/images/blogs/blog-7.png"
+    }
+  ]
+}
