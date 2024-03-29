@@ -148,22 +148,22 @@ const displayLawyerTeam = async () => {
         <img class="rounded-xl" alt="lawyer" src="${data.profileHref}">
         <div class="absolute bg-secondary-3 border border-gray-400/20 flex flex-col sm:gap-y-5 md:gap-y-6 w-[90%] sm:w-[80%] right-[5%] -bottom-[15%] md:h-[180px] px-4.5 py-2.5 py- sm:px-3 sm:py-2 md:px-6 md:py-4 sm:-bottom-16 sm:right-[11%] md:-bottom-20 md:right-[10%] rounded-xl">
           <div class="lawyer-team__social-media flex justify-center items-center gap-x-3 sm:py-2.5 md:py-3 py-4.5 sm:gap-y-5 md:gap-x-6">
-            <a arial-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#instagram"></use>
               </svg>
             </a>
-            <a arial-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#facebook"></use>
               </svg>
             </a>
-            <a arial-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#twitter"></use>
               </svg>
             </a>
-            <a arial-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#pintrest"></use>
               </svg>
