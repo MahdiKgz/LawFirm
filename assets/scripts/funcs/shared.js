@@ -5,7 +5,7 @@ const displayPracticeArea = async () => {
     "#practice-area__content"
   );
 
-  const res = await fetch("http://localhost:3000/practiceArea");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/practiceArea");
   const practiceAreas = await res.json();
   practiceAreas.forEach((practiceArea) => {
     practiceAreaCardWrapper.insertAdjacentHTML(
@@ -47,7 +47,7 @@ const displayPracticeArea = async () => {
 const showCaseSuccessPercent = async () => {
   const showCaseSuccessWrapper = document.querySelector(".history__left-body");
 
-  const res = await fetch("http://localhost:3000/case-success");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/case-success");
   const casesPercent = await res.json();
 
   casesPercent.forEach((casePercent) => {
@@ -73,7 +73,7 @@ const showCaseSuccessPercent = async () => {
 const showClientComments = async () => {
   const commentWrapper = document.querySelector("#client-comment-wrapper");
 
-  const res = await fetch("http://localhost:3000/client-comment");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/client-comment");
   const clientCommentData = await res.json();
 
   clientCommentData.forEach((client) => {
@@ -136,7 +136,7 @@ const showClientComments = async () => {
 const displayLawyerTeam = async () => {
   const laywerTeamCardWrapper = document.querySelector(".lawyer-team__body");
 
-  const res = await fetch("http://localhost:3000/lawyer-team");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/lawyer-team");
   const lawyerTeamData = await res.json();
 
   lawyerTeamData.forEach((data) => {
@@ -206,7 +206,7 @@ const sendClientMessage = async () => {
     answerBody
   };
   
-  const res = await fetch('http://localhost:3000/messages',{
+  const res = await fetch('https://yadegar-lawfirm.liara.run//messages',{
     method : "POST" , 
     headers : {
       "Content-type" : "application/json"
@@ -217,7 +217,7 @@ const sendClientMessage = async () => {
 
 const showRecentBlog = async () => {
   const recentBlogWrapper = document.querySelector('#recent-blog__cards')
-  const res = await fetch('http://localhost:3000/recent-blog')
+  const res = await fetch('https://yadegar-lawfirm.liara.run/recent-blog')
   const blogs = await res.json() 
 
   blogs.forEach(blog => {
