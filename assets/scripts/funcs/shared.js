@@ -5,7 +5,7 @@ const displayPracticeArea = async () => {
     "#practice-area__content"
   );
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/practiceArea");
+  const res = await fetch("http://localhost:3000/practiceArea");
   const practiceAreas = await res.json();
   practiceAreas.forEach((practiceArea) => {
     practiceAreaCardWrapper.insertAdjacentHTML(
@@ -47,7 +47,7 @@ const displayPracticeArea = async () => {
 const showCaseSuccessPercent = async () => {
   const showCaseSuccessWrapper = document.querySelector(".history__left-body");
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/case-success");
+  const res = await fetch("http://localhost:3000/case-success");
   const casesPercent = await res.json();
 
   casesPercent.forEach((casePercent) => {
@@ -73,7 +73,7 @@ const showCaseSuccessPercent = async () => {
 const showClientComments = async () => {
   const commentWrapper = document.querySelector("#client-comment-wrapper");
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/client-comment");
+  const res = await fetch("http://localhost:3000/client-comment");
   const clientCommentData = await res.json();
 
   clientCommentData.forEach((client) => {
@@ -84,7 +84,7 @@ const showClientComments = async () => {
         `
       <div class="client-comment__odd flex flex-col-reverse md:flex-col gap-y-6 sm:gap-y-6 md:gap-y-5 md:max-w-[336px]">
         <div class="client-comment__odd-header flex justify-start md:justify-end gap-x-2.5 md:gap-x-3">
-          <img src="./assets/images/${client.avatarHref}" alt="client-avatar" class="w-16 h-16 rounded-full">
+          <img src="./assets/images/index/${client.avatarHref}" alt="client-avatar" class="w-16 h-16 rounded-full">
           <div class="flex flex-col items-start md:gap-y-1.5">
             <h1 class="client-comment__name font-DanaDemi text-lg md:text-xl mt-1.5 md:mt-2.5">${client.name}</h1>
             <span class="client-comment__job font-Dana tracking-tighter">${client.job}</span>
@@ -109,7 +109,7 @@ const showClientComments = async () => {
         `
       <div class="client-comment__even flex flex-col-reverse gap-y-6 sm:gap-y-6 md:gap-y-5 md:max-w-[336px]">
         <div class="client-comment__even-header flex justify-start md:justify-end gap-x-2.5 md:gap-x-3">
-          <img src="./assets/images/${client.avatarHref}" alt="client-avatar" class="w-16 h-16 rounded-full">
+          <img src="./assets/images/index/${client.avatarHref}" alt="client-avatar" class="w-16 h-16 rounded-full">
           <div class="flex flex-col items-start md:gap-y-1.5">
             <h1 class="client-comment__name font-DanaDemi text-lg md:text-xl mt-1.5 md:mt-2.5">${client.name}</h1>
             <span class="client-comment__job font-Dana tracking-tighter">${client.job}</span>
@@ -136,7 +136,7 @@ const showClientComments = async () => {
 const displayLawyerTeam = async () => {
   const laywerTeamCardWrapper = document.querySelector(".lawyer-team__body");
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/lawyer-team");
+  const res = await fetch("http://localhost:3000/lawyer-team");
   const lawyerTeamData = await res.json();
 
   lawyerTeamData.forEach((data) => {
@@ -148,22 +148,22 @@ const displayLawyerTeam = async () => {
         <img class="rounded-xl" alt="lawyer" src="${data.profileHref}">
         <div class="absolute bg-secondary-3 border border-gray-400/20 flex flex-col sm:gap-y-5 md:gap-y-6 w-[90%] sm:w-[80%] right-[5%] -bottom-[15%] md:h-[180px] px-4.5 py-2.5 py- sm:px-3 sm:py-2 md:px-6 md:py-4 sm:-bottom-16 sm:right-[11%] md:-bottom-20 md:right-[10%] rounded-xl">
           <div class="lawyer-team__social-media flex justify-center items-center gap-x-3 sm:py-2.5 md:py-3 py-4.5 sm:gap-y-5 md:gap-x-6">
-            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#instagram"></use>
               </svg>
             </a>
-            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#facebook"></use>
               </svg>
             </a>
-            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#twitter"></use>
               </svg>
             </a>
-            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
+            <a href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#pintrest"></use>
               </svg>
@@ -206,7 +206,7 @@ const sendClientMessage = async () => {
     answerBody
   };
   
-  const res = await fetch('https://yadegar-lawfirm.liara.run/messages',{
+  const res = await fetch('http://localhost:3000/messages',{
     method : "POST" , 
     headers : {
       "Content-type" : "application/json"
@@ -217,7 +217,7 @@ const sendClientMessage = async () => {
 
 const showRecentBlog = async () => {
   const recentBlogWrapper = document.querySelector('#recent-blog__cards')
-  const res = await fetch('https://yadegar-lawfirm.liara.run/recent-blog')
+  const res = await fetch('http://localhost:3000/recent-blog')
   const blogs = await res.json() 
 
   blogs.forEach(blog => {
