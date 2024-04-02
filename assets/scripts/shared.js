@@ -14,8 +14,8 @@ let mobileMenuCloserBtn = document.querySelector(".mobile-menu__header-left");
 let overlay = document.querySelector(".overlay");
 
 mobileMenuTogglerBtn.addEventListener('click', () => {
-  mobileMenuElem.classList.replace('hidden', 'block');
-  overlay.classList.replace('hidden', 'flex');
+  mobileMenuElem.style.display = 'block';
+  overlay.style.display = 'flex'
 });
 
 

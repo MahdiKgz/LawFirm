@@ -5,7 +5,7 @@ const displayPracticeArea = async () => {
     "#practice-area__content"
   );
 
-  const res = await fetch("http://localhost:3000/practiceArea");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/practiceArea");
   const practiceAreas = await res.json();
   practiceAreas.forEach((practiceArea) => {
     practiceAreaCardWrapper.insertAdjacentHTML(
@@ -47,7 +47,7 @@ const displayPracticeArea = async () => {
 const showCaseSuccessPercent = async () => {
   const showCaseSuccessWrapper = document.querySelector(".history__left-body");
 
-  const res = await fetch("http://localhost:3000/case-success");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/case-success");
   const casesPercent = await res.json();
 
   casesPercent.forEach((casePercent) => {
@@ -60,8 +60,34 @@ const showCaseSuccessPercent = async () => {
         <span class="font-DanaDemi text-lg sm:text-xl">${casePercent.percent}%</span>
       </div>
       <div class="history__left-body-percent__body">
-        <div class="history__left-percent relative w-full bg-white h-1">
-          <div class="history__left-percent-bar absolute inset-0 h-full bg-primary-1" style="width:${casePercent.percent}%"></div>
+        <div class="history__left-percent relative w-full bg-white h-1 rounded-full">
+          <div class="history__left-percent-bar absolute inset-0 h-full bg-primary-1 rounded-full" style="width:${casePercent.percent}%"></div>
+        </div>
+      </div>
+    </div>
+    `
+    );
+  });
+};
+
+const showCaseSuccessPercentDark = async () => {
+  const showCaseSuccessWrapper = document.querySelector(".case-percent__statistics");
+
+  const res = await fetch("https://yadegar-lawfirm.liara.run/case-success");
+  const casesPercent = await res.json();
+
+  casesPercent.forEach((casePercent) => {
+    showCaseSuccessWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
+    <div class="case-percent__statistics-body-percent w-full flex flex-col gap-y-2.5 sm:gap-y-3.5 md:gap-y-3">
+      <div class="case-percent__statistics-body-percent__header flex items-center justify-between">
+        <h1 class="font-DanaDemi text-lg sm:text-xl">${casePercent.category}</h1>
+        <span class="font-DanaDemi text-lg sm:text-xl">${casePercent.percent}%</span>
+      </div>
+      <div class="case-percent__statistics-body-percent__body">
+        <div class="history__left-percent relative w-full bg-white h-1 rounded-full">
+          <div class="case-percent__statistics-percent-bar absolute inset-0 h-full bg-primary-2 rounded-full" style="width:${casePercent.percent}%"></div>
         </div>
       </div>
     </div>
@@ -73,7 +99,7 @@ const showCaseSuccessPercent = async () => {
 const showClientComments = async () => {
   const commentWrapper = document.querySelector("#client-comment-wrapper");
 
-  const res = await fetch("http://localhost:3000/client-comment");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/client-comment");
   const clientCommentData = await res.json();
 
   clientCommentData.forEach((client) => {
@@ -136,7 +162,7 @@ const showClientComments = async () => {
 const displayLawyerTeam = async () => {
   const laywerTeamCardWrapper = document.querySelector(".lawyer-team__body");
 
-  const res = await fetch("http://localhost:3000/lawyer-team");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/lawyer-team");
   const lawyerTeamData = await res.json();
 
   lawyerTeamData.forEach((data) => {
@@ -206,7 +232,7 @@ const sendClientMessage = async () => {
     answerBody
   };
   
-  const res = await fetch('http://localhost:3000/messages',{
+  const res = await fetch('https://yadegar-lawfirm.liara.run/messages',{
     method : "POST" , 
     headers : {
       "Content-type" : "application/json"
@@ -217,7 +243,7 @@ const sendClientMessage = async () => {
 
 const showRecentBlog = async () => {
   const recentBlogWrapper = document.querySelector('#recent-blog__cards')
-  const res = await fetch('http://localhost:3000/recent-blog')
+  const res = await fetch('https://yadegar-lawfirm.liara.run/recent-blog')
   const blogs = await res.json() 
 
   blogs.forEach(blog => {
@@ -250,11 +276,46 @@ const showRecentBlog = async () => {
   })
 }
 
+const showTeamValues  = async () => {
+  const cardWrapper = document.querySelector('.offer-value__content')
+
+  const res = await fetch('https://yadegar-lawfirm.liara.run/values')
+  const values = await res.json()
+
+  values.forEach(value => {
+    cardWrapper.insertAdjacentHTML('beforeend' , 
+    `
+    <div class="offer-value__card w-full flex flex-col items-start gap-y-3.5 md:gap-y-6 px-12 py-14 md:px-[55px] md:py-[62px] bg-primary-3 rounded-xl">
+      <div class="offer-value__card-header">
+        <div class="w-16 h-16 md:w-[73px] md:h-[73px] flex justify-center items-center p-2 md:p-1 rounded-full bg-primary-2">
+          <svg class="w-[37px] h-[27px]">
+            <use href="#${value.iconHref}"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="offer-value__card-body flex flex-col items-start gap-y-3.5 md:gap-y-2.5">
+        <h1 class="font-DanaDemi text-lg/10 md:text-xl/10">
+          ${value.title}
+        </h1>
+        <span class="text-gray-500 text-base">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+        </span>
+      </div>
+    </div>
+    `)
+  })
+}
+
+
+
+
 export {
   displayPracticeArea,
   showCaseSuccessPercent,
   showClientComments,
   displayLawyerTeam,
   sendClientMessage,
-  showRecentBlog
+  showRecentBlog,
+  showCaseSuccessPercentDark,
+  showTeamValues
 };

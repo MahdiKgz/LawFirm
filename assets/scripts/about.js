@@ -1,6 +1,8 @@
-import { showClientComments , displayLawyerTeam } from "./funcs/shared.js";
+import { showClientComments , displayLawyerTeam, showCaseSuccessPercentDark, showTeamValues } from "./funcs/shared.js";
 
 window.addEventListener("load", () => {
   showClientComments();
   displayLawyerTeam();
+  showCaseSuccessPercentDark();
+  showTeamValues();
 });
