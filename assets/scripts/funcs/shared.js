@@ -5,7 +5,7 @@ const displayPracticeArea = async () => {
     "#practice-area__content"
   );
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/practiceArea");
+  const res = await fetch("http://localhost:3000/practiceArea");
   const practiceAreas = await res.json();
   practiceAreas.forEach((practiceArea) => {
     practiceAreaCardWrapper.insertAdjacentHTML(
@@ -47,7 +47,7 @@ const displayPracticeArea = async () => {
 const showCaseSuccessPercent = async () => {
   const showCaseSuccessWrapper = document.querySelector(".history__left-body");
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/case-success");
+  const res = await fetch("http://localhost:3000/case-success");
   const casesPercent = await res.json();
 
   casesPercent.forEach((casePercent) => {
@@ -73,7 +73,7 @@ const showCaseSuccessPercent = async () => {
 const showCaseSuccessPercentDark = async () => {
   const showCaseSuccessWrapper = document.querySelector(".case-percent__statistics");
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/case-success");
+  const res = await fetch("http://localhost:3000/case-success");
   const casesPercent = await res.json();
 
   casesPercent.forEach((casePercent) => {
@@ -99,7 +99,7 @@ const showCaseSuccessPercentDark = async () => {
 const showClientComments = async () => {
   const commentWrapper = document.querySelector("#client-comment-wrapper");
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/client-comment");
+  const res = await fetch("http://localhost:3000/client-comment");
   const clientCommentData = await res.json();
 
   clientCommentData.forEach((client) => {
@@ -162,7 +162,7 @@ const showClientComments = async () => {
 const displayLawyerTeam = async () => {
   const laywerTeamCardWrapper = document.querySelector(".lawyer-team__body");
 
-  const res = await fetch("https://yadegar-lawfirm.liara.run/lawyer-team");
+  const res = await fetch("http://localhost:3000/lawyer-team");
   const lawyerTeamData = await res.json();
 
   lawyerTeamData.forEach((data) => {
@@ -232,18 +232,25 @@ const sendClientMessage = async () => {
     answerBody
   };
   
-  const res = await fetch('https://yadegar-lawfirm.liara.run/messages',{
+  const res = await fetch('http://localhost:3000/messages',{
     method : "POST" , 
     headers : {
       "Content-type" : "application/json"
     },
     body : JSON.stringify(newMessage)
   })
+
+  userFullNameElem.value = ''
+  userEmailElem.value = ''
+  userPhoneElem.value = ''
+  userSubjectElem.value = ''
+  messageBodyElem.value = ''
+
 };
 
 const showRecentBlog = async () => {
   const recentBlogWrapper = document.querySelector('#recent-blog__cards')
-  const res = await fetch('https://yadegar-lawfirm.liara.run/recent-blog')
+  const res = await fetch('http://localhost:3000/recent-blog')
   const blogs = await res.json() 
 
   blogs.forEach(blog => {
@@ -279,7 +286,7 @@ const showRecentBlog = async () => {
 const showTeamValues  = async () => {
   const cardWrapper = document.querySelector('.offer-value__content')
 
-  const res = await fetch('https://yadegar-lawfirm.liara.run/values')
+  const res = await fetch('http://localhost:3000/values')
   const values = await res.json()
 
   values.forEach(value => {
@@ -305,9 +312,6 @@ const showTeamValues  = async () => {
     `)
   })
 }
-
-
-
 
 export {
   displayPracticeArea,
