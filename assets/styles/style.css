@@ -732,6 +732,10 @@ html {
   z-index: 30;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1167,6 +1171,16 @@ html {
 
 .gap-y-9 {
   row-gap: 2.25rem;
+}
+
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
+.gap-x-9 {
+  -moz-column-gap: 2.25rem;
+       column-gap: 2.25rem;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -2289,6 +2303,16 @@ html {
     font-size: 1.25rem;
     line-height: 48px;
   }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -3138,6 +3162,11 @@ html {
   .md\:text-xl\/\[48px\] {
     font-size: 1.25rem;
     line-height: 48px;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:tracking-tighter {

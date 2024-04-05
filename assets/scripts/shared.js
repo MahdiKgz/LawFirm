@@ -1,6 +1,12 @@
 const submenuButtonElem = document.querySelector("#header-submenu-btn");
 const subMenuElem = document.querySelector("#header-submenu");
 
+const loadOverlay = document.querySelector(".load-overlay")
+
+window.addEventListener('load' , () => {
+  loadOverlay.style.display = 'none'
+})
+
 submenuButtonElem.addEventListener("mouseenter", () => {
   subMenuElem.classList.replace("hidden", "flex");
 });
@@ -13,19 +19,17 @@ let mobileMenuTogglerBtn = document.querySelector("#mobile-menu-toggler");
 let mobileMenuCloserBtn = document.querySelector(".mobile-menu__header-left");
 let overlay = document.querySelector(".overlay");
 
-mobileMenuTogglerBtn.addEventListener('click', () => {
-  mobileMenuElem.style.display = 'block';
-  overlay.style.display = 'flex'
+mobileMenuTogglerBtn.addEventListener("click", () => {
+  mobileMenuElem.style.display = "block";
+  overlay.style.display = "flex";
 });
 
+overlay.addEventListener("click", (event) => {
+  mobileMenuElem.style.display = "none";
+  overlay.style.display = "none";
+});
 
-overlay.addEventListener('click' , (event) => {
-  mobileMenuElem.style.display = 'none'
-  overlay.style.display = 'none'
-})
-
-mobileMenuCloserBtn.addEventListener('click', () => {
-  mobileMenuElem.style.display = 'none'
-  overlay.style.display = 'none'
-
+mobileMenuCloserBtn.addEventListener("click", () => {
+  mobileMenuElem.style.display = "none";
+  overlay.style.display = "none";
 });
