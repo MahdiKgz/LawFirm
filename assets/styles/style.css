@@ -2433,10 +2433,6 @@ html {
     height: 76px;
   }
 
-  .md\:h-full {
-    height: 100%;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
