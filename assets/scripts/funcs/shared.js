@@ -1,4 +1,4 @@
-import { showSwal } from "./utils.js";
+import { getUrlParam, showSwal } from "./utils.js";
 
 const displayPracticeArea = async () => {
   const practiceAreaCardWrapper = document.querySelector(
@@ -30,7 +30,7 @@ const displayPracticeArea = async () => {
             <use href="#${practiceArea.logoHref}"></use>
           </svg>
 
-          <a href='practiceArea.html?area=${practiceArea.shortName}'
+          <a href='practiceAreaDetail.html?area=${practiceArea.shortName}'
             class="bg-primary-3 hover:bg-primary-1 hover:text-zinc-800 px-8 py-5 sm:px-5 sm:py-3.5 md:px-9 md:py-4 rounded-xl transition-all duration-300"
           >
             بیشتر بخوانید
@@ -174,22 +174,22 @@ const displayLawyerTeam = async () => {
         <img class="rounded-xl" alt="lawyer" src="${data.profileHref}">
         <div class="absolute bg-secondary-3 border border-gray-400/20 flex flex-col sm:gap-y-5 md:gap-y-6 w-[90%] sm:w-[80%] right-[5%] -bottom-[15%] md:h-[180px] px-4.5 py-2.5 py- sm:px-3 sm:py-2 md:px-6 md:py-4 sm:-bottom-16 sm:right-[11%] md:-bottom-20 md:right-[10%] rounded-xl">
           <div class="lawyer-team__social-media flex justify-center items-center gap-x-3 sm:py-2.5 md:py-3 py-4.5 sm:gap-y-5 md:gap-x-6">
-            <a href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#instagram"></use>
               </svg>
             </a>
-            <a href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#facebook"></use>
               </svg>
             </a>
-            <a href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#twitter"></use>
               </svg>
             </a>
-            <a href="#" class="lawyer-team__social-media-link">
+            <a aria-label="social-media-link" href="#" class="lawyer-team__social-media-link">
               <svg class="w-6 h-6">
                 <use href="#pintrest"></use>
               </svg>
@@ -313,6 +313,38 @@ const showTeamValues  = async () => {
   })
 }
 
+const changeTitle = () => {
+  const pageTitleCategory = getUrlParam('area')
+  const pageTitleElem = document.querySelector('#practice-area-title')
+  let pageTitle = null
+
+  if (!pageTitleCategory){
+    pageTitle = 'زمینه های کاری'
+  }
+  switch (pageTitleCategory){
+    case "bussiness" : 
+      pageTitle = "قانون کسب و کار"
+      break
+    case "construction" : 
+      pageTitle = "قانون ساخت و ساز"
+      break
+    case "accident" : 
+      pageTitle = "قانون تصادفات رانندگی"
+      break
+    case "wrongful-death" : 
+      pageTitle = "قانون قتل غیر عمد"
+      break
+    case  "criminal" : 
+      pageTitle = "قانون جرایم کیفری"
+      break
+    case "family" : 
+      pageTitle = "قانون خانواده"
+      break
+  }
+
+  pageTitleElem.innerHTML = pageTitle
+}
+
 export {
   displayPracticeArea,
   showCaseSuccessPercent,
@@ -321,5 +353,6 @@ export {
   sendClientMessage,
   showRecentBlog,
   showCaseSuccessPercentDark,
-  showTeamValues
+  showTeamValues,
+  changeTitle
 };

@@ -6,7 +6,12 @@ const showSwal = (title, icon, buttons, callback) => {
   }).then((result) => callback(result));
 };
 
+const getUrlParam = (key) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(key);
+};
 
 export {
-    showSwal
+    showSwal,
+    getUrlParam
 }

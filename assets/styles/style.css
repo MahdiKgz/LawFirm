@@ -746,6 +746,16 @@ html {
   margin-bottom: 0.25rem;
 }
 
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .-mr-6 {
   margin-right: -1.5rem;
 }
@@ -893,6 +903,18 @@ html {
   height: 100vh;
 }
 
+.h-\[550\62D\637px\] {
+  height: 550حطpx;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[620px\] {
+  height: 620px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -992,6 +1014,14 @@ html {
 
 .resize {
   resize: both;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-1 {
@@ -1173,16 +1203,6 @@ html {
   row-gap: 2.25rem;
 }
 
-.gap-x-12 {
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
-}
-
-.gap-x-9 {
-  -moz-column-gap: 2.25rem;
-       column-gap: 2.25rem;
-}
-
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1203,6 +1223,10 @@ html {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .rounded-full {
@@ -1313,6 +1337,11 @@ html {
   border-top-color: rgb(209 176 107 / var(--tw-border-opacity));
 }
 
+.border-b-gray-50 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(249 250 251 / var(--tw-border-opacity));
+}
+
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1378,6 +1407,10 @@ html {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
 }
 
 .bg-no-repeat {
@@ -1536,6 +1569,21 @@ html {
   padding-bottom: 2rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1570,6 +1618,14 @@ html {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-left {
@@ -1706,6 +1762,11 @@ html {
 .text-xl\/9 {
   font-size: 1.25rem;
   line-height: 2.25rem;
+}
+
+.text-lg\/8 {
+  font-size: 1.125rem;
+  line-height: 2rem;
 }
 
 .tracking-tighest {
@@ -1939,6 +2000,10 @@ html {
 
   .sm\:h-\[750px\] {
     height: 750px;
+  }
+
+  .sm\:h-\[560px\] {
+    height: 560px;
   }
 
   .sm\:w-10 {
@@ -2247,6 +2312,11 @@ html {
     padding-bottom: 1.25rem;
   }
 
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -2272,6 +2342,11 @@ html {
   .sm\:text-3xl\/8 {
     font-size: 1.875rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .sm\:text-base {
@@ -2302,16 +2377,6 @@ html {
   .sm\:text-xl\/\[48px\] {
     font-size: 1.25rem;
     line-height: 48px;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
@@ -2589,6 +2654,10 @@ html {
     max-width: 668px;
   }
 
+  .md\:list-disc {
+    list-style-type: disc;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2812,6 +2881,10 @@ html {
     row-gap: 91px;
   }
 
+  .md\:gap-y-\[87px\] {
+    row-gap: 87px;
+  }
+
   .md\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2828,6 +2901,12 @@ html {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:rounded-none {
@@ -3028,6 +3107,11 @@ html {
     padding-bottom: 91px;
   }
 
+  .md\:py-25 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -3164,8 +3248,18 @@ html {
     line-height: 48px;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
+  .md\:text-base\/10 {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-lg\/10 {
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-3xl\/10 {
+    font-size: 1.875rem;
     line-height: 2.5rem;
   }
 
