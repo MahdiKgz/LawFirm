@@ -676,6 +676,10 @@ html {
   background-size: cover;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
 }
@@ -736,6 +740,11 @@ html {
   z-index: 50;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -744,16 +753,6 @@ html {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-}
-
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .-mr-6 {
@@ -883,6 +882,10 @@ html {
   height: 58px;
 }
 
+.h-\[620px\] {
+  height: 620px;
+}
+
 .h-\[780px\] {
   height: 780px;
 }
@@ -901,18 +904,6 @@ html {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[550\62D\637px\] {
-  height: 550حطpx;
-}
-
-.h-\[550px\] {
-  height: 550px;
-}
-
-.h-\[620px\] {
-  height: 620px;
 }
 
 .w-10 {
@@ -1014,10 +1005,6 @@ html {
 
 .resize {
   resize: both;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .list-decimal {
@@ -1337,11 +1324,6 @@ html {
   border-top-color: rgb(209 176 107 / var(--tw-border-opacity));
 }
 
-.border-b-gray-50 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(249 250 251 / var(--tw-border-opacity));
-}
-
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1409,10 +1391,6 @@ html {
   background-size: cover;
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1447,6 +1425,16 @@ html {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .px-3 {
@@ -1569,19 +1557,9 @@ html {
   padding-bottom: 2rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-2\.5 {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-4 {
@@ -1618,14 +1596,6 @@ html {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-left {
@@ -1744,6 +1714,11 @@ html {
   line-height: 1.5rem;
 }
 
+.text-lg\/8 {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1764,8 +1739,13 @@ html {
   line-height: 2.25rem;
 }
 
-.text-lg\/8 {
-  font-size: 1.125rem;
+.text-base\/9 {
+  font-size: 1rem;
+  line-height: 2.25rem;
+}
+
+.text-base\/8 {
+  font-size: 1rem;
   line-height: 2rem;
 }
 
@@ -1805,6 +1785,10 @@ html {
 .text-zinc-800 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .outline-none {
@@ -1913,6 +1897,10 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
 .group:hover .group-hover\:mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1937,6 +1925,15 @@ html {
 .group:hover .group-hover\:border-b-primary-1 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 176 107 / var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:text-primary-1 {
+  --tw-text-opacity: 1;
+  color: rgb(209 176 107 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 .group:focus .group-focus\:text-white {
@@ -1998,12 +1995,12 @@ html {
     height: 1565px;
   }
 
-  .sm\:h-\[750px\] {
-    height: 750px;
-  }
-
   .sm\:h-\[560px\] {
     height: 560px;
+  }
+
+  .sm\:h-\[750px\] {
+    height: 750px;
   }
 
   .sm\:w-10 {
@@ -2222,6 +2219,11 @@ html {
     padding: 0.875rem;
   }
 
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -2310,11 +2312,6 @@ html {
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .sm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .sm\:pb-0 {
@@ -2654,10 +2651,6 @@ html {
     max-width: 668px;
   }
 
-  .md\:list-disc {
-    list-style-type: disc;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2877,12 +2870,12 @@ html {
     row-gap: 85px;
   }
 
-  .md\:gap-y-\[91px\] {
-    row-gap: 91px;
-  }
-
   .md\:gap-y-\[87px\] {
     row-gap: 87px;
+  }
+
+  .md\:gap-y-\[91px\] {
+    row-gap: 91px;
   }
 
   .md\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -2901,12 +2894,6 @@ html {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:rounded-none {
@@ -2977,6 +2964,11 @@ html {
     padding-right: 3rem;
   }
 
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -3027,6 +3019,11 @@ html {
     padding-right: 88px;
   }
 
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
@@ -3045,6 +3042,11 @@ html {
   .md\:py-2\.5 {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
+  }
+
+  .md\:py-25 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
   }
 
   .md\:py-3 {
@@ -3105,11 +3107,6 @@ html {
   .md\:py-\[91px\] {
     padding-top: 91px;
     padding-bottom: 91px;
-  }
-
-  .md\:py-25 {
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
   }
 
   .md\:pb-0 {
@@ -3208,9 +3205,19 @@ html {
     line-height: 1.5rem;
   }
 
+  .md\:text-base\/10 {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-base\/5 {
     font-size: 1rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-base\/8 {
+    font-size: 1rem;
+    line-height: 2rem;
   }
 
   .md\:text-base\/9 {
@@ -3246,21 +3253,6 @@ html {
   .md\:text-xl\/\[48px\] {
     font-size: 1.25rem;
     line-height: 48px;
-  }
-
-  .md\:text-base\/10 {
-    font-size: 1rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-lg\/10 {
-    font-size: 1.125rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-3xl\/10 {
-    font-size: 1.875rem;
-    line-height: 2.5rem;
   }
 
   .md\:tracking-tighter {

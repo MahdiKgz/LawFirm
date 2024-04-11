@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"/>
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
-  <body class="font-DanaMedium relative">
+  <body class="font-DanaMedium">
     <svg class="hidden">
       <symbol
         id="group-logo"
@@ -791,7 +791,7 @@
         
         
     </svg>
-    
+
     <div class="load-overlay fixed inset-0 h-screen w-full bg-primary-2 text-white flex items-center justify-center z-50">
       <div class="flex items-center gap-x-5 md:gap-x-6">
         <img width="auto" height="auto" class="" alt="group-logo" src="./assets/icons/group-logo.png"/>
@@ -1164,190 +1164,24 @@
     <!-- Start Main sectoins  -->
     <main class="main">
       <!-- Landing section -->
-      <section
-        id="introduction"
-        class="intro-landing bg-primary-2 max-w-full h-[780px] sm:h-[750px] md:h-[1040px] bg-mobile sm:bg-tablet md:bg-desktop bg-cover bg-no-repeat"
-      >
-        <div
-          class="container flex h-full items-start md:items-center justify-end text-white"
-        >
-          <div
-            class="flex flex-col gap-y-4 mt-[202px] sm:mt-[254px] md:mt-[218px] md:gap-y-10 justify-end items-end"
-          >
-            <div
-              class="flex flex-col gap-y-4 md:gap-y-10 items-end justify-end"
-            >
-              <svg class="w-[95px] h-11">
-                <use href="#head-icon"></use>
-              </svg>
-              <h1 class="font-MorabaBold text-4xl md:text-[65px]/[48px]">
-                فهم عمیق تر
-              </h1>
-              <h1 class="font-MorabaBold text-4xl md:text-[65px]/[48px]">
-                راه حل بهتر
-              </h1>
-            </div>
-            <h2
-              class="font-DanaDemi text-left text-lg md:text-xl text-primary-1 max-w-[300px] md:max-w-[593px]"
-            >
-              این یک واقعیت ثابت شده است که خواننده با نگاه کردن به صفحه بندی
-              محتوای قابل خواندن آن حواسش پرت می شود.
-            </h2>
-            <button
-              class="px-10 py-3.5 md:px-20 md:py-7 md:mt-10 text-base md:text-xl text-zinc-800 bg-primary-1/90 hover:bg-primary-1 hover:text-white rounded-xl transition-all duration-300"
-              type="button"
-            >
-              در تماس باشید
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- Lawyer Introduction  -->
-      <section
-        id="introduction2"
-        class="intro-landing-2 max-w-full bg-primary-2 h-auto"
-      >
-        <div class="container text-white py-20 sm:py-25 md:py-30">
-          <div class="grid grid-cols-1 items-center md:grid-cols-2 md:gap-x-0">
-            <div
-              class="introduction2__right flex flex-col justify-center items-center md:max-w-[476px] gap-y-4 sm:gap-y-6 md:gap-y-8"
-            >
-              <img class="w-full" alt="lib" src="./assets/images/index/law-lib.jpg" />
-              <img
-                class="w-full"
-                alt="hammer"
-                src="./assets/images/index/judge-hammer.jpg"
-              />
-            </div>
-            <div
-              class="introduction2__left flex flex-col gap-y-5 md:gap-y-16 mt-16"
-            >
-              <div
-                class="introduction2__left-top flex flex-col gap-y-5 sm:gap-y-4 md:gap-y-3"
-              >
-                <h1 class="font-MorabaBold text-4xl/6 md:text-5xl/8">
-                  انتخاب ساده برای دعاوی حقوقی پیچیده
-                </h1>
-                <svg class="w-[95px] h-11 rotate-180">
-                  <use href="#head-icon"></use>
+      <section class="bg-primary-2 text-white max-w-full h-[780px] sm:h-[750px] md:h-[700px] bg-practiceArea bg-cover bg-no-repeat">
+        <div class="container flex justify-center items-center md:items-end h-full md:pb-25">
+            <div class="flex flex-col justify-center items-center gap-y-12 md:gap-y-8">
+                <h1 class="font-MorabaBold text-4xl/[48px] md:text-5xl">پرونده های موفق اخیر</h1>
+                <svg class="w-20 h-16 sm:w-[96px] sm:h-11">
+                    <use href="#centered-head-icon"></use>
                 </svg>
-              </div>
-              <div
-                class="introduction2__left-bottom flex flex-col gap-y-10 sm:gap-y-12 md:gap-y-16"
-              >
-                <div class="space-y-3 md:space-y-5">
-                  <span
-                    class="font-DanaMedium text-lg md:text-base tracking-tighest md:tracking-tighter"
-                  >
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                    کاربردی می باشد.
-                  </span>
-                </div>
-                <div>
-                  <div
-                    class="lawyer-intro flex items-center gap-x-2 md:gap-x-4"
-                  >
-                    <div class="lawyer-intro__right">
-                      <img
-                        class="lawyer-intro__right-avatar w-16 h-16 md:w-[76px] md:h-[76px] rounded-full"
-                        alt="avatar"
-                        src="./assets/images/index/lawyer-avatar.png"
-                      />
-                    </div>
-                    <div class="lawyer-intro__left">
-                      <span
-                        class="lawyer-intro__left-text font-MorabaBold text-xl md:text-2xl"
-                        >حامد تهرانی</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col sm:flex-row items-center gap-y-8 sm:gap-x-5 md:gap-x-6 md:space-y-1"
-                >
-                  <div
-                    class="bg-primary-3 w-[300px] mx-auto md:w-[248px] md:mx-0 flex justify-center items-center py-10 md:px-10 md:py-8 rounded-xl"
-                  >
-                    <div class="flex items-center gap-x-5 md:gap-x-3">
-                      <svg class="w-[58px] h-[58px]">
-                        <use href="#document-case"></use>
-                      </svg>
-                      <div class="flex flex-col sm:gap-y-1.5 md:gap-y-2">
-                        <h1 class="text-xl md:text-base">95%</h1>
-                        <h2 class="text-xl md:text-base">پرونده موفق</h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="bg-primary-1 w-[300px] mx-auto md:w-[248px] md:mx-0 flex justify-center items-center py-10 md:px-10 md:py-8 rounded-xl"
-                  >
-                    <div class="flex items-center gap-x-5 md:gap-x-3">
-                      <div
-                        class="flex justify-center items-center px-6 py-4 md:px-3.5 md:py-3 text-2xl md:text-xl bg-secondary-1 rounded-lg"
-                      >
-                        35+
-                      </div>
-                      <div class="flex flex-col sm:gap-y-1.5 md:gap-y-2">
-                        <h1 class="text-xl md:text-base">سال</h1>
-                        <h2 class="text-xl md:text-base">تجربه کاری</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
       </section>
-      <!-- Practice area intro -->
-      <section
-        id="practice-area"
-        class="practice-area max-w-full bg-secondary-1 h-auto py-16 sm:py-20 md:py-30"
-      >
-        <div class="container flex flex-col md:gap-y-20 text-white">
-          <!-- practice area heading -->
-          <div class="grid grid-cols-1 md:grid-cols-2">
-            <div
-              class="practice-area__header-right flex flex-col gap-y-5 md:gap-y-4 md:max-w-[500px] md:pl-[147px] md:border-l-2 md:border-gray-400/20"
-            >
-              <h1 class="font-MorabaBold text-4xl/8 sm:text-3xl/8 md:text-3xl/8">
-                با زمینه های کاری ما بیشتر آشنا شوید
-              </h1>
-              <svg class="w-[95px] h-11 rotate-180">
-                <use href="#head-icon"></use>
-              </svg>
-            </div>
-            <div class="practice-area__header-left flex items-center mt-10">
-              <p class="text-lg text-right md:text-base">
-                لورم ایپسوم متن ساختگی با تولید سادگی
-                <span class="text-primary-1"
-                  >نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک</span
-                >
-                است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                <span class="text-primary-1"
-                  >کاربردهای متنوع با هدف بهبود ابزارهای کاربردی</span
-                >
-                می باشد.
-              </p>
-            </div>
-          </div>
-
-          <!-- practice area cards -->
-          <!-- Data will be loaded by js -->
-          <div
-            id="practice-area__content"
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 sm:gap-x-6 sm:gap-y-6 md:gap-x-7 mt-20"
-          >
-            <!-- Data will be loaded by js -->
-          </div>
+      
+      <section class="bg-primary-2 text-white py-20 sm:py-25 md:py-30">
+        <div id="successful-case-wrapper" class="container grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-5">
+            <!-- Cards will be loaded by js -->            
         </div>
       </section>
-
-      <!-- Counters and partners -->
+      
+      <!--  partners -->
       <section
         id="counters"
         class="counters-partners bg-white h-auto text-primary-2"
@@ -1355,106 +1189,6 @@
         <div
           class="container flex flex-col gap-y-16 sm:gap-y-12 md:gap-y-12 py-20 sm:py-25 md:py-30"
         >
-          <div
-            class="counters__top flex flex-col md:gap-y-14 pb-4 sm:pb-12 md:pb-16 sm:border-b-2 sm:border-b-gray-400/20"
-          >
-            <div class="counters__top-title">
-              <div
-                class="text-center flex flex-col justify-center items-center gap-y-10 sm:gap-y-9 md:gap-y-6"
-              >
-                <h1 class="font-MorabaBold text-4xl/[48px]">
-                  اگر در مشکل افتادید ما میتونیم کمک کنیم
-                </h1>
-                <svg class="w-[96px] h-11">
-                  <use href="#centered-head-icon"></use>
-                </svg>
-              </div>
-              <div
-                class="counters__top-description text-center text-[#909090] text-lg md:text-base mt-10 sm:mt-8 md:mt-12"
-              >
-                <p class="">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                  کاربردی می باشد.
-                </p>
-              </div>
-            </div>
-            <div
-              class="counters__top-counters flex flex-wrap items-center justify-evenly gap-y-6 mt-10 sm:mt-14 md:mt-5"
-            >
-              <!-- Counter card -->
-              <div
-                class="flex gap-x-2 px-6 py-4.5 md:gap-x-3 md:px-10 md:py-8 bg-light border-2 border-gray-500/10 rounded-xl"
-              >
-                <div>
-                  <span
-                    class="flex flex-col w-20 h-20 md:w-25 md:h-25 gap-y-1.5 md:gap-y-2 justify-center items-center border-2 border-primary-1 rounded-full p-3.5"
-                  >
-                    <svg class="w-6 h-6">
-                      <use href="#heart"></use>
-                    </svg>
-                    <span class="counters__top-count text-base"> 7230 </span>
-                  </span>
-                </div>
-
-                <div
-                  class="counters__top-text flex flex-col gap-y-1.5 md:gap-y-2.5 mt-1 md:mt-3.5"
-                >
-                  <h1 class="font-MorabaBold text-lg/6 sm:text-xl/[48px]">
-                    موکل اعتماد کرده
-                  </h1>
-                  <span class="text-sm md:text-base"
-                    >لورم ایپسوم متن ساختگی</span
-                  >
-                </div>
-              </div>
-              <!-- Finish counter card -->
-
-              <!-- Counter card -->
-              <div
-                class="flex gap-x-2 px-6 py-4.5 md:gap-x-3 md:px-10 md:py-8 bg-light border-2 border-gray-500/10 rounded-xl"
-              >
-                <div>
-                  <span
-                    class="flex flex-col w-20 h-20 md:w-25 md:h-25 gap-y-1.5 md:gap-y-2 justify-center items-center border-2 border-primary-1 rounded-full p-3.5"
-                  >
-                    <svg class="w-6 h-6">
-                      <use href="#star"></use>
-                    </svg>
-                    <span class="counters__top-count text-base"> 98% </span>
-                  </span>
-                </div>
-
-                <div
-                  class="counters__top-text flex flex-col gap-y-1.5 md:gap-y-2.5 mt-1 md:mt-3.5"
-                >
-                  <h1 class="font-MorabaBold text-lg/6 sm:text-xl/[48px]">
-                    پرونده های موفق
-                  </h1>
-                  <span class="text-sm md:text-base"
-                    >لورم ایپسوم متن ساختگی</span
-                  >
-                </div>
-              </div>
-              <!-- Finish counter card -->
-
-              <!-- Counter card -->
-              <div
-                id="counter-card__third"
-                class="flex w-[281px] h-30 md:w-[358px] md:h-[158px] justify-end items-center gap-x-2 px-6 py-4.5 md:gap-x-3 md:px-10 md:py-9 bg-light border-2 border-gray-500/10 rounded-xl text-white"
-              >
-                <div class="flex flex-col md:gap-y-2.5">
-                  <h1 class="font-MorabaBold text-left md:text-3xl">
-                    15,890
-                  </h1>
-                  <span class="font-DanaDemi"> دفاع جنایی ارائه شده </span>
-                </div>
-              </div>
-              <!-- Finish counter card -->
-            </div>
-          </div>
 
           <div
             class="counter__bottom flex flex-col gap-y-14 sm:gap-y-12 md:gap-y-16"
@@ -1538,279 +1272,7 @@
           </div>
         </div>
       </section>
-
-      <!-- History -->
-      <section
-        id="history"
-        class="history bg-hammer bg-cover bg-no-repeat text-white h-auto py-20 sm:py-25"
-      >
-        <div class="container flex justify-center items-center">
-          <div class="bg-primary-2/80 flex flex-col justify-between md:flex-row items-center gap-y-12 sm:gap-y-8 md:gap-x-[72px] py-8 px-11 sm:py-10 sm:px-16 md:pt-32 md:px-20 md:w-full rounded-xl">
-            <div class="history__right-box flex flex-col gap-y-10 sm:gap-y-12 md:gap-y-14 md:-mt-24">
-              <div
-                class="history__right-header flex flex-col gap-y-3.5 sm:gap-y-4.5 md:gap-y-4"
-              >
-                <h1 class="font-MorabaBold text-4xl/8 md:text-3xl/[48px]">
-                  ما وکیلان برتری هستیم و تاریخچه ما
-                </h1>
-                <svg class="w-[95px] h-11 rotate-180">
-                  <use href="#head-icon"></use>
-                </svg>
-              </div>
-              <div
-                class="history__right-body flex-col flex items-start gap-y-10 md:gap-y-16 border-b-2 border-b-dark-border pb-9 md:pb-0 md:border-b-0"
-              >
-                <div
-                  class="history__right-item flex flex-col gap-y-1.5 sm:gap-y-2.5 md:gap-y-3 md:max-w-[360px]"
-                >
-                  <h1
-                    class="font-DanaDemi text-lg sm:text-xl md:text-xl text-primary-1"
-                  >
-                    1373 - بازگشایی
-                  </h1>
-                  <span class="font-DanaMedium md:text-base"
-                    >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است.</span
-                  >
-                </div>
-                <div
-                  class="history__right-item flex flex-col gap-y-1.5 sm:gap-y-2.5 md:gap-y-3 md:max-w-[360px]"
-                >
-                  <h1
-                    class="font-DanaDemi text-lg sm:text-xl md:text-xl text-primary-1"
-                  >
-                    1389 - تاسیس شعبه ای جدید
-                  </h1>
-                  <span class="font-DanaMedium md:text-base"
-                    >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است.</span
-                  >
-                </div>
-                <div
-                  class="history__right-item flex flex-col gap-y-1.5 sm:gap-y-2.5 md:gap-y-3 md:max-w-[360px]"
-                >
-                  <h1
-                    class="font-DanaDemi text-lg sm:text-xl md:text-xl text-primary-1"
-                  >
-                    1393 - رسیدن به 18 هزار موکل
-                  </h1>
-                  <span class="font-DanaMedium md:text-base"
-                    >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است.</span
-                  >
-                </div>
-                <div
-                  class="history__right-item flex flex-col gap-y-1.5 sm:gap-y-2.5 md:gap-y-3 md:max-w-[360px]"
-                >
-                  <h1
-                    class="font-DanaDemi text-lg sm:text-xl md:text-xl text-primary-1"
-                  >
-                    1398 - دریافت جایزه بهترین وکلای سال
-                  </h1>
-                  <span class="font-DanaMedium md:text-base"
-                    >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است.</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="history__mid-box w-[290px] h-[800px] hidden xl:block">
-              <img
-                class="history__mid-image"
-                src="./assets/images/index/lady-justice.png"
-                alt="lady-justice"
-              />
-            </div>
-            <div class="history__left-box w-full md:max-w-[370px] md:-mt-24">
-              <div class="history__left-header flex flex-col gap-y-3.5 sm:gap-y-4.5 md:gap-y-12">
-                <div class="flex flex-col gap-y-3.5 sm:gap-y-4.5 md:gap-y-4">
-                  <h1 class="font-MorabaBold text-4xl md:text-3xl">
-                    ما متخصص هستیم و با تجربه
-                  </h1>
-                  <svg class="w-[95px] h-11 rotate-180">
-                    <use href="#head-icon"></use>
-                  </svg>
-                </div>
-                <div class="history__left-header-text">
-                  <p class="font-DanaDemi text-base">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                    کاربردی می باشد
-                  </p>
-                </div>
-              </div>
-              <div class="history__left-body flex flex-col gap-y-9 sm:gap-y-10 md:gap-y-8 mt-12 md:mt-14">
-                  <!-- Data comes form js -->
-              </div>
-              <button class="history__left-btn w-full md:w-auto px-9 py-5 md:px-16 md:py-7 bg-primary-1 text-primary-2 text-lg md:text-xl hover:text-white rounded-xl mt-14 md:mt-12 transition-all duration-300">مشاوره رایگان</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Clients comments -->
-      <section id="client-comment" class="clients-comments bg-primary-2 text-white h-auto py-20 sm:py-25">
-        <div class="container flex justify-center items-center">
-          <div class="flex flex-col items-center gap-y-20 sm:gap-y-16 md:gap-y-[70px]">
-            <div class="client-comment__header flex flex-col justify-center items-center gap-y-8 sm:gap-y-7 md:gap-y-6">
-              <h1 class="font-MorabaBold text-3xl/8 md:text-4xl/[48px]">مروری بر نظرات موکلان</h1>
-              <svg class="w-[96px] h-11">
-                <use href="#centered-head-icon"></use>
-              </svg>
-            </div>
-            <div id="client-comment-wrapper" class="client-comment__wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-12 sm:gap-x-10 md:gap-x-5">
-
-              <!-- Data loads from js -->
-              
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Lawyer Team -->
-      <section id="team" class="lawyers-team bg-white h-auto py-30 sm:py-25">
-        <div class="container flex flex-col items-center justify-center gap-y-12 sm:gap-y-16 md:gap-y-[70px]">
-          <div class="lawyer-team__header flex flex-col items-center justify-center gap-y-9 sm:gap-y-8 md:gap-y-6 text-center">
-            <h1 class="font-MorabaBold text-3xl/8">
-              وکلای مجرب ما آماده هستند
-              برای پاسخ به هر سوال 
-            </h1>
-            <svg class="w-[96px] h-11">
-              <use href="#centered-head-icon"></use>
-            </svg>
-          </div>
-          <div class="lawyer-team__body flex flex-row-reverse items-center justify-center flex-wrap gap-y-30 sm:gap-x-6 sm:gap-y-20 md:gap-y-25 md:gap-x-7">
-           <!-- Data loaded from js -->
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact us -->
-      <section id="contact-us" class="contact-us bg-primary-2 text-white h-auto py-20 sm:py-25">
-        <div class="container flex items-center justify-center flex-wrap gap-y-12 sm:gap-y-16 md:gap-x-[131px]">
-          <div class="contact-us__right space-y-8 md:space-y-10">
-            <div class="contact-us__right-header flex flex-col gap-y-9 sm:gap-y-10 md:gap-y-6 max-w-full md:max-w-[500px]">
-              <h1 class="font-MorabaBold text-3xl/10 md:text-3xl/[48px] text-center md:text-right">متخصصان حرفه ای تیم حقوقی ما آماده اند تا بهترین راه حل را به شما ارائه دهند</h1>
-              <span class="font-DanaMedium text-lg/6 text-gray-500">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-              </span>
-            </div>
-            <button class="w-full md:w-auto bg-primary-1 text-primary-2 hover:text-white px-16 py-5 md:px-[88px] md:py-7 text-lg md:text-xl rounded-xl transition-all duration-300">تماس بگیرید</button>
-          </div>
-          <div class="contact-us__left md:w-[600px]">
-            <div class="bg-white text-primary-2 flex items-center justify-center px-8 py-6 md:px-16 md:py-9 rounded-xl">
-             <div class="flex items-center justify-center w-full px-4.5 py-4.5 md:px-8 md:py-4.5 border-[14px] border-[#DFDFDF]">
-              <div class="flex flex-col gap-y-7 md:gap-y-9">
-                <div class="contact-us__left-header flex flex-col items-start gap-y-4 md:gap-y-3">
-                  <h1 class="font-MorabaBold text-2xl/10 sm:text-3xl/10 md:text-2xl/[48px]">یک جلسه مشاوره رایگان دریافت کنید</h1>
-                  <span class="font-DanaMedium text-base sm:text-lg/6 text-gray-500">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
-                </div>
-                <div class="contact-us__left-body flex items-center gap-x-2 md:gap-x-3">
-                  <div class="w-12 h-12 md:w-16 md:h-16 flex justify-center items-center bg-primary-1 p-3.5 rounded-full">
-                    <svg class="w-8 h-8  text-white">
-                      <use href="#phone-fill"></use>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col items-start gap-y-0.5">
-                    <h1 class="font-DanaDemi text-base sm:text-lg md:text-lg/6">تماس بگیرید با :</h1>
-                    <span dir="ltr" class="font-DanaDemi text-base sm:text-base md:text-xl">+98 (990) 4333881</span>
-                  </div>
-                </div>
-              </div>
-             </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact form  -->
-      <section id="contact-form" class="w-full h-auto flex items-center justify-center py-20 sm:py-25 md:py-30">
-        <div class="container flex flex-col gap-y-6 md:gap-y-14 px-6 py-16 sm:py-12 md:px-20 md:py-14 bg-primary-2 rounded-xl">
-          <!-- 1st row -->
-          <div class="contact-us__row-1 w-full flex flex-wrap md:flex-nowrap items-center gap-y-6 md:gap-x-16">
-            <div class="contact-us__row-right w-full md:w-1/2 ">
-              <input id="client-name" type="text" class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500" required placeholder="نام خود را وارد کنید *">
-            </div>
-            <div class="contact-us__row-left w-full md:w-1/2 ">
-              <input id="client-email" type="email" class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500" required placeholder="ایمیل خود را وارد کنید *">
-            </div>          
-          </div>
-          <!-- 2nd row -->
-          <div class="contact-us__row-2 flex flex-wrap md:flex-nowrap items-center gap-y-6 md:gap-x-16">
-            <div class="contact-us__row-right w-full md:w-1/2 ">
-              <input id="client-phone" type="tel" dir="rtl" class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500" required placeholder="شماره تماس خود را وارد کنید *">
-            </div>
-            <div class="contact-us__row-left w-full md:w-1/2 ">
-              <input id="client-subject" type="text" class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500" required placeholder="موضوع خود را وارد کنید *">
-            </div>
-            
-            
-          </div>
-          <!-- 3rd row -->
-          <div class="contact-us__row-3 flex flex-col items-start gap-y-1.5 md:gap-y-4">
-            <label for="client-message" class="text-gray-500 group group-focus:text-white">پیام خود را وارد کنید *</label>
-            <textarea id="client-message" class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:text-white focus:border-b-primary-1 transition-all duration-300 text-gray-500 focus:placeholder:text-white placeholder:text-gray-500 resize-none"></textarea>
-          </div>
-          <div class="flex justify-center items-center">
-            <button id="send" class="px-9 py-4.5 md:px-11 md:py-7 mt-5 bg-white w-full md:w-auto rounded-xl">ارسال پیام</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Recent blogs  -->
-      <section id="recent-blog" class="recent-blog bg-primary-2 text-white py-20 sm:py-25 md:py-30">
-        <div class="container">
-
-          <div class="recent-blog__top flex flex-col items-center gap-y-12 md:gap-y-14 border-b-2 border-b-gray-500 py-10 md:py-16">
-            <div class="recent-blog__top-header flex flex-col items-center text-center gap-y-8 md:gap-y-6">
-              <h1 class="font-MorabaBold text-4xl md:text-3xl/[48px]">بلاگ های اخیر</h1>
-              <svg class="w-[96px] h-11">
-                <use href="#centered-head-icon"></use>
-              </svg>
-            </div>
-            <div class="recent-blog__top-body flex flex-wrap md:flex-nowrap items-start justify-center gap-y-10 md:gap-x-9">
-              <div class="recent-blog__top-right">
-                <img alt="images" src="./assets/images/blogs/blog-1.png" class=" md:w-[744px] md:h-[490px] rounded-xl">
-              </div>
-              <div class="recent-blog__top-left flex flex-col items-start gap-y-7 md:gap-y-8 pb-6 sm:pb-5 md:pb-16">
-                <div class="recent-blog__top-header w-full text-primary-1 py-4.5 sm:py-5 md:py-4 border-b-2 border-b-gray-500">
-                  <div class="flex items-center gap-x-2.5 md:gap-x-2">
-                    <span class="font-DanaMedium text-lg sm:text-xl md:text-lg">پرونده جنایی</span>
-                    <span>|</span>
-                    <span class="font-DanaMedium text-lg sm:text-xl md:text-lg">آدم ربایی</span>
-                  </div>
-                </div>
-                <div class="recent-blog__top-body flex flex-col gap-y-9 md:gap-y-14 md:max-w-[668px]">
-                  <h1 class="font-MorabaBold text-2xl/8 md:text-3xl/[48px]">
-                    یک آزمون مستقل از
-                    حساب های خیریه
-                  </h1>
-                  <h2 class="font-DanaDemi text-base/6 md:text-lg/6">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                  </h2>
-                </div>
-                <a href="#" class="text-primary-1 text-base md:text-lg">بیشتر بخوانید</a>
-              </div>
-            </div>
-          </div>
-          <div class="recent-blog__body pt-16 md:pt-16">
-            <div id="recent-blog__cards" class="grid justify-between grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-20 sm:gap-y-14 sm:gap-x-8 md:gap-y-6 md:gap-x-9">
-              <!-- Data from JS -->
-            </div>
-        </div>
-      </section>
-      <section>
-        <img alt="bg" src="./assets/images/index/index-bg.jpg">
-      </section>
     </main>
-
 
     <footer class="bg-primary-2 text-white py-25 sm:py-24 md:py-16">
       <div class="container flex flex-col items-center justify-center gap-y-12 sm:gap-y-16 md:gap-y-[91px]">
@@ -1959,6 +1421,6 @@
     <div class="overlay hidden fixed inset-0 bg-black/50 z-10"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
     <script src="./assets/scripts/shared.js"></script>
-    <script src="./assets/scripts/index.js" type="module"></script>
+    <script src="./assets/scripts/successfulCase.js" type="module"></script>
   </body>
 </html>

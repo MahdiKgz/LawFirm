@@ -71,7 +71,9 @@ const showCaseSuccessPercent = async () => {
 };
 
 const showCaseSuccessPercentDark = async () => {
-  const showCaseSuccessWrapper = document.querySelector(".case-percent__statistics");
+  const showCaseSuccessWrapper = document.querySelector(
+    ".case-percent__statistics"
+  );
 
   const res = await fetch("https://yadegar-lawfirm.liara.run/case-success");
   const casesPercent = await res.json();
@@ -209,18 +211,17 @@ const displayLawyerTeam = async () => {
 };
 
 const sendClientMessage = async () => {
-
   const userFullNameElem = document.querySelector("#client-name");
   const userEmailElem = document.querySelector("#client-email");
   const userPhoneElem = document.querySelector("#client-phone");
   const userSubjectElem = document.querySelector("#client-subject");
   const messageBodyElem = document.querySelector("#client-message");
 
-  const isAnswered = false
+  const isAnswered = false;
   const answerBody = {
-    creator : "Mahdi" , 
-    answerBody : null
-  }
+    creator: "Mahdi",
+    answerBody: null,
+  };
 
   const newMessage = {
     userName: userFullNameElem.value.trim(),
@@ -229,33 +230,33 @@ const sendClientMessage = async () => {
     userSubject: userSubjectElem.value.trim(),
     message: messageBodyElem.value.trim(),
     isAnswered,
-    answerBody
+    answerBody,
   };
-  
-  const res = await fetch('https://yadegar-lawfirm.liara.run/messages',{
-    method : "POST" , 
-    headers : {
-      "Content-type" : "application/json"
+
+  const res = await fetch("https://yadegar-lawfirm.liara.run/messages", {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
     },
-    body : JSON.stringify(newMessage)
-  })
+    body: JSON.stringify(newMessage),
+  });
 
-  userFullNameElem.value = ''
-  userEmailElem.value = ''
-  userPhoneElem.value = ''
-  userSubjectElem.value = ''
-  messageBodyElem.value = ''
-
+  userFullNameElem.value = "";
+  userEmailElem.value = "";
+  userPhoneElem.value = "";
+  userSubjectElem.value = "";
+  messageBodyElem.value = "";
 };
 
 const showRecentBlog = async () => {
-  const recentBlogWrapper = document.querySelector('#recent-blog__cards')
-  const res = await fetch('https://yadegar-lawfirm.liara.run/recent-blog')
-  const blogs = await res.json() 
+  const recentBlogWrapper = document.querySelector("#recent-blog__cards");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/recent-blog");
+  const blogs = await res.json();
 
-  blogs.forEach(blog => {
-    recentBlogWrapper.insertAdjacentHTML('beforeend' , 
-    `
+  blogs.forEach((blog) => {
+    recentBlogWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
     <div class="recent-blog__card">
       <div class="recent-blog__card-header md:max-w-[443px] overflow-hidden">
         <img class="recent-blog__card-image rounded-t-xl" alt="image" src="${blog.cover}">
@@ -279,19 +280,20 @@ const showRecentBlog = async () => {
     </div>
     
     `
-    )
-  })
-}
+    );
+  });
+};
 
-const showTeamValues  = async () => {
-  const cardWrapper = document.querySelector('.offer-value__content')
+const showTeamValues = async () => {
+  const cardWrapper = document.querySelector(".offer-value__content");
 
-  const res = await fetch('https://yadegar-lawfirm.liara.run/values')
-  const values = await res.json()
+  const res = await fetch("https://yadegar-lawfirm.liara.run/values");
+  const values = await res.json();
 
-  values.forEach(value => {
-    cardWrapper.insertAdjacentHTML('beforeend' , 
-    `
+  values.forEach((value) => {
+    cardWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
     <div class="offer-value__card w-full flex flex-col items-start gap-y-3.5 md:gap-y-6 px-12 py-14 md:px-[55px] md:py-[62px] bg-primary-3 rounded-xl">
       <div class="offer-value__card-header">
         <div class="w-16 h-16 md:w-[73px] md:h-[73px] flex justify-center items-center p-2 md:p-1 rounded-full bg-primary-2">
@@ -309,41 +311,83 @@ const showTeamValues  = async () => {
         </span>
       </div>
     </div>
-    `)
-  })
-}
+    `
+    );
+  });
+};
 
 const changeTitle = () => {
-  const pageTitleCategory = getUrlParam('area')
-  const pageTitleElem = document.querySelector('#practice-area-title')
-  let pageTitle = null
+  const pageTitleCategory = getUrlParam("area");
+  const pageTitleElem = document.querySelector("#practice-area-title");
+  let pageTitle = null;
 
-  if (!pageTitleCategory){
-    pageTitle = 'زمینه های کاری'
+  if (!pageTitleCategory) {
+    pageTitle = "زمینه های کاری";
   }
-  switch (pageTitleCategory){
-    case "bussiness" : 
-      pageTitle = "قانون کسب و کار"
-      break
-    case "construction" : 
-      pageTitle = "قانون ساخت و ساز"
-      break
-    case "accident" : 
-      pageTitle = "قانون تصادفات رانندگی"
-      break
-    case "wrongful-death" : 
-      pageTitle = "قانون قتل غیر عمد"
-      break
-    case  "criminal" : 
-      pageTitle = "قانون جرایم کیفری"
-      break
-    case "family" : 
-      pageTitle = "قانون خانواده"
-      break
+  switch (pageTitleCategory) {
+    case "bussiness":
+      pageTitle = "قانون کسب و کار";
+      break;
+    case "construction":
+      pageTitle = "قانون ساخت و ساز";
+      break;
+    case "accident":
+      pageTitle = "قانون تصادفات رانندگی";
+      break;
+    case "wrongful-death":
+      pageTitle = "قانون قتل غیر عمد";
+      break;
+    case "criminal":
+      pageTitle = "قانون جرایم کیفری";
+      break;
+    case "family":
+      pageTitle = "قانون خانواده";
+      break;
   }
 
-  pageTitleElem.innerHTML = pageTitle
-}
+  pageTitleElem.innerHTML = pageTitle;
+};
+
+const showSuccessfulCases = async () => {
+  const successfulCaseCardWrapper = document.querySelector(
+    "#successful-case-wrapper"
+  );
+  const res = await fetch(
+    "https://yadegar-lawfirm.liara.run/recent-success-cases"
+  );
+  const successfulCases = await res.json();
+
+ successfulCases.forEach(successfulCase => {
+  successfulCaseCardWrapper.insertAdjacentHTML(
+    "beforeend",
+    `
+  <div class="case__card bg-secondary-1 rounded-xl group">
+      <div class="case__card-img relative flex justify-center items-center">
+          <img alt="case-card" src=${successfulCase.imageHref} class="case-card__image rounded-t-xl"/>
+          <p class="absolute flex opacity-0 invisible group-hover:visible group-hover:opacity-100 justify-center items-center bg-secondary-1 px-8 py-3.5 md:py-7 md:px-20 rounded-xl transition-all delay-100 duration-300">
+              ${successfulCase.caseResult} میلیون تومان
+          </p>
+      </div>
+      <div class="card-card__content flex flex-col gap-y-3.5 md:gap-y-5 px-5 py-8 md:px-14 md:py-12">
+          <div class="card-case__date-title flex flex-col gap-y-3 md:gap-y-2.5">
+              <span class="text-primary-1">${successfulCase.date}</span>
+              <h1 class="font-DanaDemi text-lg/8 md:text-xl/10">
+                  ${successfulCase.title}
+              </h1>   
+          </div>
+          <div class="card-case__text text-base/6 md:text-base/8">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+          </div>
+          <div class="card-case__read-more">
+              <a href="#" class="card-case__link text-base/8 md:text-base/10 group-hover:text-primary-1 transition-all delay-100 duration-300">بیشتر بخوانید</a>
+          </div>
+      </div>
+  </div>
+  `
+  );
+ })
+  
+};
 
 export {
   displayPracticeArea,
@@ -354,5 +398,6 @@ export {
   showRecentBlog,
   showCaseSuccessPercentDark,
   showTeamValues,
-  changeTitle
+  changeTitle,
+  showSuccessfulCases
 };
