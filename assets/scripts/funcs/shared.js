@@ -357,10 +357,10 @@ const showSuccessfulCases = async () => {
   );
   const successfulCases = await res.json();
 
- successfulCases.forEach(successfulCase => {
-  successfulCaseCardWrapper.insertAdjacentHTML(
-    "beforeend",
-    `
+  successfulCases.forEach((successfulCase) => {
+    successfulCaseCardWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
   <div class="case__card bg-secondary-1 rounded-xl group">
       <div class="case__card-img relative flex justify-center items-center">
           <img alt="case-card" src=${successfulCase.imageHref} class="case-card__image rounded-t-xl"/>
@@ -384,10 +384,77 @@ const showSuccessfulCases = async () => {
       </div>
   </div>
   `
-  );
- })
-  
+    );
+  });
 };
+
+const showOffersCards = async () => {
+  const offerCardWrapper = document.querySelector("#offer-card-wrapper");
+
+  const res = await fetch("https://yadegar-lawfirm.liara.run/plans");
+  const plans = await res.json();
+
+
+  
+  plans.forEach((plan) => {
+    offerCardWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
+    <div class="card bg-secondary-1 w-[340px] h-auto sm:w-[400px] md:px-16 py-8 sm:py-9 md:py-11 rounded-xl">
+      <div class="card-header flex flex-col items-center justify-center gap-y-3.5 md:gap-y-2.5 pb-8 sm:pb-9 md:pb-11 border-b-2 border-b-[#3A4553]">
+        <h1 class="font-MorabaMedium text-3xl/10 md:text-3xl/[48px]">${plan.plan_title}</h1>
+        <span class="font-DanaMedium text-primary-1 text-lg">${plan.plan_subtitle}</span>
+      </div>
+      <div class="card-body flex flex-col items-center justify-center gap-y-10 md:gap-y-8 mt-10 md:mt-8">
+        <div class="flex flex-col items-center justify-center gap-y-2.5 md:gap-y-3">
+          <span class="text-3xl text-primary-1"> ${plan.price_per_case} تومان</span>
+          <span class="bg-primary-2 text-sm md:text-base px-5 md:px-7 py-2 md:py-1.5 rounded-md">به ازای هر پرونده</span>
+        </div>
+        <div class="supported-case w-full md:mt-4">
+          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
+            تصادفات جدی   
+          </p>
+          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
+            تصادفات تراکتور   
+          </p>
+          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
+              تصادفات نیمه سنگین
+          </p>
+          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
+              -
+          </p>
+          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
+              -
+          </p>
+        </div>
+        <div>
+          <button class="text-xl border border-primary-1 hover:bg-primary-1 hover:text-primary-2 px-25 py-5 sm:px-28 sm:py-6 md:px-24 md:py-7 rounded-xl transition-all duration-300 delay-100">بزن بریم</button>
+        </div>
+      </div>
+    </div>
+    `
+    );
+  });
+};
+
+const showFAQCards = async () => {
+  const faqWrapper = document.querySelector('.faq__card-wrapper')
+  const res = await fetch('https://yadegar-lawfirm.liara.run/faq')
+  const faqs = await res.json()
+
+  faqs.forEach(faq => {
+    faqWrapper.insertAdjacentHTML('beforeend' , 
+  
+  `
+  <div class="faq__card flex flex-col items-start w-full gap-y-5 md:gap-y-4 pb-9 md:pb-[60px] border-b-2 border-b-gray-200">
+      <h1 class="font-MorabaBold text-2xl/8 md:text-3xl/9 text-wrap">${faq.question}</h1>
+      <span class="font-DanaMedium text-gray-400 text-base md:text-lg">
+        ${faq.answer}
+      </span>
+  </div>
+  `)
+  })
+}
 
 export {
   displayPracticeArea,
@@ -399,5 +466,7 @@ export {
   showCaseSuccessPercentDark,
   showTeamValues,
   changeTitle,
-  showSuccessfulCases
+  showSuccessfulCases,
+  showOffersCards,
+  showFAQCards
 };
