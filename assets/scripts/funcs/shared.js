@@ -394,38 +394,37 @@ const showOffersCards = async () => {
   const res = await fetch("https://yadegar-lawfirm.liara.run/plans");
   const plans = await res.json();
 
-
-  
   plans.forEach((plan) => {
     offerCardWrapper.insertAdjacentHTML(
       "beforeend",
       `
     <div class="card bg-secondary-1 w-[340px] h-auto sm:w-[400px] md:px-16 py-8 sm:py-9 md:py-11 rounded-xl">
       <div class="card-header flex flex-col items-center justify-center gap-y-3.5 md:gap-y-2.5 pb-8 sm:pb-9 md:pb-11 border-b-2 border-b-[#3A4553]">
-        <h1 class="font-MorabaMedium text-3xl/10 md:text-3xl/[48px]">${plan.plan_title}</h1>
-        <span class="font-DanaMedium text-primary-1 text-lg">${plan.plan_subtitle}</span>
+        <h1 class="font-MorabaMedium text-3xl/10 md:text-3xl/[48px]">${
+          plan.plan_title
+        }</h1>
+        <span class="font-DanaMedium text-primary-1 text-lg">${
+          plan.plan_subtitle
+        }</span>
       </div>
       <div class="card-body flex flex-col items-center justify-center gap-y-10 md:gap-y-8 mt-10 md:mt-8">
         <div class="flex flex-col items-center justify-center gap-y-2.5 md:gap-y-3">
-          <span class="text-3xl text-primary-1"> ${plan.price_per_case} تومان</span>
+          <span class="text-3xl text-primary-1"> ${
+            plan.price_per_case
+          } تومان</span>
           <span class="bg-primary-2 text-sm md:text-base px-5 md:px-7 py-2 md:py-1.5 rounded-md">به ازای هر پرونده</span>
         </div>
         <div class="supported-case w-full md:mt-4">
-          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
-            تصادفات جدی   
-          </p>
-          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
-            تصادفات تراکتور   
-          </p>
-          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
-              تصادفات نیمه سنگین
-          </p>
-          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
-              -
-          </p>
-          <p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
-              -
-          </p>
+        ${
+          plan.plan_support
+            .map((support) => {
+              return `<p class="border-t-2 border-t-[#3A4553] w-full text-center py-4.5 md:py-5">
+                ${support.support_exp ? support.support_exp : "-"}
+              </p>`;
+            })
+            .join("") // to remove the , from UI you need to use .join() method right after the map method
+        }
+          
         </div>
         <div>
           <button class="text-xl border border-primary-1 hover:bg-primary-1 hover:text-primary-2 px-25 py-5 sm:px-28 sm:py-6 md:px-24 md:py-7 rounded-xl transition-all duration-300 delay-100">بزن بریم</button>
@@ -438,23 +437,65 @@ const showOffersCards = async () => {
 };
 
 const showFAQCards = async () => {
-  const faqWrapper = document.querySelector('.faq__card-wrapper')
-  const res = await fetch('https://yadegar-lawfirm.liara.run/faq')
-  const faqs = await res.json()
+  const faqWrapper = document.querySelector(".faq__card-wrapper");
+  const res = await fetch("https://yadegar-lawfirm.liara.run/faq");
+  const faqs = await res.json();
 
-  faqs.forEach(faq => {
-    faqWrapper.insertAdjacentHTML('beforeend' , 
-  
-  `
+  faqs.forEach((faq) => {
+    faqWrapper.insertAdjacentHTML(
+      "beforeend",
+
+      `
   <div class="faq__card flex flex-col items-start w-full gap-y-5 md:gap-y-4 pb-9 md:pb-[60px] border-b-2 border-b-gray-200">
       <h1 class="font-MorabaBold text-2xl/8 md:text-3xl/9 text-wrap">${faq.question}</h1>
       <span class="font-DanaMedium text-gray-400 text-base md:text-lg">
         ${faq.answer}
       </span>
   </div>
-  `)
-  })
-}
+  `
+    );
+  });
+};
+
+const showTestimonials = async () => {
+  const testimonialsCardWrapper = document.querySelector(
+    ".testimonial-wrapper"
+  );
+
+  const res = await fetch("https://yadegar-lawfirm.liara.run/testimonials");
+  const testimonials = await res.json();
+
+  testimonials.forEach((testimonial) => {
+    testimonialsCardWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
+  <div class="testimonial-card bg-primary-3 px-10 py-8 md:px-16 md:py-14 rounded-xl">
+  <div class="testimonial-card__header flex items-center justify-between">
+    <div class="testimonial-card__header-right flex items-center gap-x-3.5 md:gap-x-6">
+      <img class="client-avatar w-16 h-16 rounded-full" alt="avatar" src="./assets/images/index/${testimonial.avatarHref}">
+      <div class="flex flex-col items-start md:gap-y-1.5">
+        <h1 class="client-comment__name font-DanaDemi text-lg md:text-xl mt-1.5 md:mt-2.5">${testimonial.name}</h1>
+        <span class="client-comment__job font-Dana tracking-tighter">${testimonial.job}</span>
+      </div>
+    </div>
+    <div class="testimonial-card__header-left bg-primary-2 w-12 h-12 md:w-[76px] md:h-[76px] hidden sm:flex justify-center items-center rounded-full">
+      <svg class="w-6 md:w-8 h-4 md:h-6">
+        <use href="#quote"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="testimonial-card__body w-full mt-5 md:mt-8">
+    <span class="text-wrap text-sm md:text-base/7">
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+       چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+        و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+    </span>
+  </div>
+</div>
+  `
+    );
+  });
+};
 
 export {
   displayPracticeArea,
@@ -468,5 +509,6 @@ export {
   changeTitle,
   showSuccessfulCases,
   showOffersCards,
-  showFAQCards
+  showFAQCards,
+  showTestimonials
 };

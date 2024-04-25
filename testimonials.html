@@ -743,18 +743,6 @@
         <rect x="44.5" y="18" width="7" height="7" fill="#D1B06B" />
       </symbol>
       <symbol
-        id="dark-centered-head-icon"
-        viewBox="0 0 96 44"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line x1="0.5" y1="26.5" x2="95.5" y2="26.5" stroke="#1F2732" />
-        <line x1="0.5" y1="16.5" x2="95.5" y2="16.5" stroke="#1F2732" />
-        <line x1="53" y1="44" x2="53" y2="2.18557e-08" stroke="#1F2732" />
-        <line x1="43" y1="44" x2="43" y2="2.18557e-08" stroke="#1F2732" />
-        <rect x="44.5" y="18" width="7" height="7" fill="#1F2732" />
-      </symbol>
-      <symbol
         id="heart"
         viewBox="0 0 22 20"
         fill="none"
@@ -872,48 +860,62 @@
         />
       </symbol>
       <symbol
-        id="dark-head-icon"
+        id="payment"
+        viewBox="0 0 48 48"
+        fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
-        width="95"
-        height="44"
-        viewBox="0 0 95 44"
-        fill="none"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
       >
-        <rect x="21" y="18" width="7" height="7" fill="#1F2732" />
-        <line y1="26.5" x2="95" y2="26.5" stroke="#1F2732" />
-        <line y1="16.5" x2="95" y2="16.5" stroke="#1F2732" />
-        <line x1="29.5" y1="44" x2="29.5" y2="2.18557e-08" stroke="#1F2732" />
-        <line x1="19.5" y1="44" x2="19.5" y2="2.18557e-08" stroke="#1F2732" />
+        <rect width="48" height="48" fill="url(#pattern0_2_2302)" />
+        <defs>
+          <pattern
+            id="pattern0_2_2302"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use xlink:href="#image0_2_2302" transform="scale(0.0111111)" />
+          </pattern>
+          <image
+            id="image0_2_2302"
+            width="90"
+            height="90"
+            xlink:href="data:image/png;base64,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"
+          />
+        </defs>
       </symbol>
-      <symbol id="justice-symbol" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.12054e-06 16C1.32922e-06 18.3869 0.790178 20.6761 2.1967 22.364C3.60322 24.0518 5.51088 25 7.5 25C9.48912 25 11.3968 24.0518 12.8033 22.364C14.2098 20.6761 15 18.3869 15 16L7.5 16L1.12054e-06 16Z" fill="#D1B06B"/>
-        <path d="M22 16C22 18.3869 22.7902 20.6761 24.1967 22.364C25.6032 24.0518 27.5109 25 29.5 25C31.4891 25 33.3968 24.0518 34.8033 22.364C36.2098 20.6761 37 18.3869 37 16L29.5 16L22 16Z" fill="#D1B06B"/>
-        <path d="M1 16L6.62071 5.62331C6.99895 4.92502 8.00105 4.92502 8.37929 5.62331L14 16" stroke="#D1B06B" stroke-width="2" stroke-linecap="round"/>
-        <path d="M23 16L28.6207 5.62331C28.9989 4.92502 30.0011 4.92502 30.3793 5.62331L36 16" stroke="#D1B06B" stroke-width="2" stroke-linecap="round"/>
-        <line x1="6.5" y1="3.5" x2="30.5" y2="3.5" stroke="#D1B06B" stroke-width="3" stroke-linecap="round"/>
-        <line x1="18.5" y1="25.5" x2="18.5" y2="1.5" stroke="#D1B06B" stroke-width="3" stroke-linecap="round"/>
+      <symbol
+        id="pay"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
       </symbol>
-      <symbol id="lock" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect y="12" width="28" height="23" rx="4" fill="#D1B06B"/>
-        <rect x="7.5" y="1.5" width="13" height="16" rx="6.5" stroke="#D1B06B" stroke-width="3"/>
-        <circle cx="14" cy="22" r="3" fill="#1F2732"/>
-        <path d="M12.2209 27.0122L12.5194 24.3252C12.6032 23.5708 13.2409 23 14 23C14.7591 23 15.3968 23.5708 15.4806 24.3252L15.7791 27.0122C15.897 28.0726 15.0669 29 14 29C12.9331 29 12.103 28.0726 12.2209 27.0122Z" fill="#1F2732"/>
-      </symbol>
-      <symbol id="sword" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7776 3.43578L23.606 4.64131L9.76321 20.3284L8.38832 18.9535L6.3464 20.9954L7.84882 22.4978L3.92219 26.9476L7.26579 30.2912L11.7155 26.3645L13.0266 27.6756L15.0686 25.6337L13.885 24.4501L29.572 10.6073L30.7776 3.43578ZM2.40693 25.4327L8.83845 31.8642L6.79654 33.9061L0.365018 27.4746L2.40693 25.4327Z" fill="#D1B06B"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.04904 10.4462L4.82227 3.2959L11.9726 4.52267L16.7533 9.93555L11.7149 15.4504L6.04904 10.4462ZM14.6189 18.0153L21.7292 24.2953L20.4232 25.6014L22.4651 27.6433L23.8978 26.2106L28.346 30.1394L31.6657 26.8196L27.737 22.3714L29.1047 21.0037L27.0628 18.9618L25.8217 20.2029L19.3327 12.8559L14.6189 18.0153ZM33.2931 25.1923L26.6536 31.8319L28.6955 33.8738L35.335 27.2342L33.2931 25.1923Z" fill="#D1B06B"/>
-      </symbol>
-        
-        
     </svg>
 
-    <div class="load-overlay fixed inset-0 h-screen w-full bg-primary-2 text-white flex items-center justify-center z-50">
+    <div
+      class="load-overlay fixed inset-0 h-screen w-full bg-primary-2 text-white flex items-center justify-center z-50"
+    >
       <div class="flex items-center gap-x-5 md:gap-x-6">
-        <img width="auto" height="auto" class="" alt="group-logo" src="./assets/icons/group-logo.png"/>
+        <img
+          width="auto"
+          height="auto"
+          class=""
+          alt="group-logo"
+          src="./assets/icons/group-logo.png"
+        />
         <p class="font-MorabaBold text-xl sm:text-4xl">گروه حقوقی یادگار</p>
       </div>
     </div>
-    
+
     <!-- Topbar and Header -->
     <div class="absolute top-0 right-0 left-0">
       <!-- start topbar in desktop and tablet mode -->
@@ -1164,23 +1166,17 @@
                   <li
                     class="w-full text-lg px-3.5 py-2 rounded-xl hover:bg-primary-2 hover:text-primary-1 transition-all duration-300"
                   >
-                  <a href="index.html">
-                    خانه
-                  </a>
+                    <a href="index.html"> خانه </a>
                   </li>
                   <li
                     class="w-full text-lg px-3.5 py-2 rounded-xl hover:bg-primary-2 hover:text-primary-1 transition-all duration-300"
                   >
-                  <a href="about.html">
-                    درباره
-                  </a>
+                    <a href="about.html"> درباره </a>
                   </li>
                   <li
                     class="w-full text-lg px-3.5 py-2 rounded-xl hover:bg-primary-2 hover:text-primary-1 transition-all duration-300"
                   >
-                  <a href="contact.html">
-                    ارتباط با ما
-                  </a>
+                    <a href="contact.html"> ارتباط با ما </a>
                   </li>
                   <li
                     class="w-full relative flex justify-between items-center text-lg px-3.5 py-2 rounded-t-xl hover:bg-primary-2 hover:text-primary-1 transition-all duration-300 group group-hover:mb-10"
@@ -1277,336 +1273,194 @@
 
     <!-- Start Main sectoins  -->
     <main class="main">
-      <!-- lawyer Intro section -->
+      <!-- Landing section -->
       <section
-        id="lawyer-introduction"
-        class="bg-primary-2 text-white h-[1300px] sm:h-[1565px] md:h-[1252px]"
+        class="bg-primary-2 text-white max-w-full h-[780px] sm:h-[750px] md:h-[700px] bg-practiceArea bg-cover bg-no-repeat"
       >
-        <div class="container flex items-center h-full">
+        <div
+          class="container flex justify-center items-center md:items-end h-full md:pb-25"
+        >
           <div
-            class="lawyer-introduction flex flex-wrap md:flex-nowrap gap-y-40 sm:gap-y-50 md:gap-x-20 mt-25 sm:mt-0 md:mt-24"
+            class="flex flex-col justify-center items-center gap-y-12 md:gap-y-8"
           >
+            <h1 class="font-MorabaBold text-4xl/[48px] md:text-5xl">
+              شهادت نامه ها
+            </h1>
+            <svg class="w-20 h-16 sm:w-[96px] sm:h-11">
+              <use href="#centered-head-icon"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Cards -->
+      <section class="bg-primary-2 text-white h-auto py-20 sm:py-25">
+        <div class="container">
+            <div class="testimonial-wrapper grid grid-cols-1 md:grid-cols-2 gap-y-12 sm:gap-8">
+             <!-- Data will be loaded -->
+            </div>
+        </div>
+      </section>
+      <!-- Contact us -->
+      <section
+        id="contact-us"
+        class="contact-us bg-primary-2 text-white h-auto py-20 sm:py-25"
+      >
+        <div
+          class="container flex items-center justify-center flex-wrap gap-y-12 sm:gap-y-16 md:gap-x-[131px]"
+        >
+          <div class="contact-us__right space-y-8 md:space-y-10">
             <div
-              class="lawyer-introduction__right relative w-full h-[350px] sm:w-full md:w-[619px] md:h-[680px] md:border-2 md:border-dark-border"
+              class="contact-us__right-header flex flex-col gap-y-9 sm:gap-y-10 md:gap-y-6 max-w-full md:max-w-[500px]"
             >
-              <img
-                class="lawyer-introduction__image absolute rounded-xl md:rounded-none mx-auto md:top-12 md:-right-16"
-                alt="lawyer"
-                src="./assets/images/about/lawyer-intro.jpg"
+              <h1
+                class="font-MorabaBold text-3xl/10 md:text-3xl/[48px] text-center md:text-right"
+              >
+                متخصصان حرفه ای تیم حقوقی ما آماده اند تا بهترین راه حل را به
+                شما ارائه دهند
+              </h1>
+              <span class="font-DanaMedium text-lg/6 text-gray-500">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.
+              </span>
+            </div>
+            <button
+              class="w-full md:w-auto bg-primary-1 text-primary-2 hover:text-white px-16 py-5 md:px-[88px] md:py-7 text-lg md:text-xl rounded-xl transition-all duration-300"
+            >
+              تماس بگیرید
+            </button>
+          </div>
+          <div class="contact-us__left md:w-[600px]">
+            <div
+              class="bg-white text-primary-2 flex items-center justify-center px-8 py-6 md:px-16 md:py-9 rounded-xl"
+            >
+              <div
+                class="flex items-center justify-center w-full px-4.5 py-4.5 md:px-8 md:py-4.5 border-[14px] border-[#DFDFDF]"
+              >
+                <div class="flex flex-col gap-y-7 md:gap-y-9">
+                  <div
+                    class="contact-us__left-header flex flex-col items-start gap-y-4 md:gap-y-3"
+                  >
+                    <h1
+                      class="font-MorabaBold text-2xl/10 sm:text-3xl/10 md:text-2xl/[48px]"
+                    >
+                      یک جلسه مشاوره رایگان دریافت کنید
+                    </h1>
+                    <span
+                      class="font-DanaMedium text-base sm:text-lg/6 text-gray-500"
+                      >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است</span
+                    >
+                  </div>
+                  <div
+                    class="contact-us__left-body flex items-center gap-x-2 md:gap-x-3"
+                  >
+                    <div
+                      class="w-12 h-12 md:w-16 md:h-16 flex justify-center items-center bg-primary-1 p-3.5 rounded-full"
+                    >
+                      <svg class="w-8 h-8 text-white">
+                        <use href="#phone-fill"></use>
+                      </svg>
+                    </div>
+                    <div class="flex flex-col items-start gap-y-0.5">
+                      <h1
+                        class="font-DanaDemi text-base sm:text-lg md:text-lg/6"
+                      >
+                        تماس بگیرید با :
+                      </h1>
+                      <span
+                        dir="ltr"
+                        class="font-DanaDemi text-base sm:text-base md:text-xl"
+                        >+98 (990) 4333881</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact form  -->
+      <section
+        id="contact-form"
+        class="w-full h-auto flex items-center justify-center py-20 sm:py-25 md:py-30"
+      >
+        <div
+          class="container flex flex-col gap-y-6 md:gap-y-14 px-6 py-16 sm:py-12 md:px-20 md:py-14 bg-primary-2 rounded-xl"
+        >
+          <!-- 1st row -->
+          <div
+            class="contact-us__row-1 w-full flex flex-wrap md:flex-nowrap items-center gap-y-6 md:gap-x-16"
+          >
+            <div class="contact-us__row-right w-full md:w-1/2">
+              <input
+                id="client-name"
+                type="text"
+                class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500"
+                required
+                placeholder="نام خود را وارد کنید *"
               />
             </div>
-            <div class="lawyer-introduction__left sm:mt-50 md:mt-24">
-              <svg class="w-[95px] h-11 rotate-180 mb-8 md:mb-4">
-                <use href="#head-icon"></use>
-              </svg>
-              <div
-                class="lawyer-introduction__left-text flex flex-col items-start gap-y-6 sm:gap-y-8 md:gap-y-14 md:max-w-[660px]"
-              >
-                <h1
-                  class="font-MorabaBold text-2xl/10 sm:text-3xl/10 md:text-4xl/[58px] md:max-w-[440px]"
-                >
-                  من حامد تهرانی هستم . یک وکیل تجاری
-                </h1>
-                <span
-                  class="font-DanaMedium text-gray-500 text-base sm:text-lg md:text-lg"
-                >
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                  کاربردی می باشد.
-                </span>
-              </div>
-              <div
-                class="lawyer-introduction__social-media-link flex flex-col items-start gap-y-8 sm:gap-y-7 md:gap-y-11"
-              >
-                <div
-                  class="lawyer-team__social-media flex gap-x-3 sm:py-2.5 md:py-3 py-4.5 sm:gap-y-5 md:gap-x-6"
-                >
-                  <a href="#" class="lawyer-team__social-media-link">
-                    <svg class="w-6 h-6">
-                      <use href="#instagram"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="lawyer-team__social-media-link">
-                    <svg class="w-6 h-6">
-                      <use href="#facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="lawyer-team__social-media-link">
-                    <svg class="w-6 h-6">
-                      <use href="#twitter"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="lawyer-team__social-media-link">
-                    <svg class="w-6 h-6">
-                      <use href="#pintrest"></use>
-                    </svg>
-                  </a>
-                </div>
-
-                <button
-                  class="px-9 py-4.5 md:px-11 md:py-7 mt-5 text-primary-2 bg-white w-full md:w-auto rounded-xl"
-                >
-                  رزرو وقت مشاوره
-                </button>
-              </div>
+            <div class="contact-us__row-left w-full md:w-1/2">
+              <input
+                id="client-email"
+                type="email"
+                class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500"
+                required
+                placeholder="ایمیل خود را وارد کنید *"
+              />
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Stroy -->
-      <section id="story" class="story bg-primary-2 text-white py-25 md:py-30">
-        <div
-          class="container flex flex-col items-center gap-y-16 md:gap-y-[85px]"
-        >
+          <!-- 2nd row -->
           <div
-            class="story__title flex flex-col justify-center items-center gap-y-8 md:gap-y-5"
+            class="contact-us__row-2 flex flex-wrap md:flex-nowrap items-center gap-y-6 md:gap-x-16"
           >
-            <h1 class="font-MorabaBold text-4xl/10 md:text-4xl/[48px]">
-              داستان ما
-            </h1>
-            <svg class="w-[96px] h-11">
-              <use href="#centered-head-icon"></use>
-            </svg>
-            <div class="story__title-text text-center md:mt-10">
-              <p class="font-DanaMedium text-xl/10 md:text-2xl/10">
-                از سال 2012، شرکت حقوقی Solicians به بیش از 2500 مشتری با
-                اختلافات حقوقی مختلف خدمات ارائه کرده است. وکلای ما طیف وسیعی از
-                مشتریان را نمایندگی می‌کنند، اما مشتریانی که دارای مسائل حقوقی
-                پیچیده و/یا موقعیت‌های درگیری بالا هستند، بیشترین سود را از شرکت
-                حقوقی ما خواهند برد.
-              </p>
+            <div class="contact-us__row-right w-full md:w-1/2">
+              <input
+                id="client-phone"
+                type="tel"
+                dir="rtl"
+                class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500"
+                required
+                placeholder="شماره تماس خود را وارد کنید *"
+              />
+            </div>
+            <div class="contact-us__row-left w-full md:w-1/2">
+              <input
+                id="client-subject"
+                type="text"
+                class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:border-b-primary-1 transition-all duration-300 focus:text-white text-gray-500 focus:placeholder:text-white placeholder:text-gray-500"
+                required
+                placeholder="موضوع خود را وارد کنید *"
+              />
             </div>
           </div>
+          <!-- 3rd row -->
           <div
-            class="story__images flex flex-wrap items-center justify-center gap-y-8 sm:gap-x-8 sm:gap-y-6 md:gap-x-9"
+            class="contact-us__row-3 flex flex-col items-start gap-y-1.5 md:gap-y-4"
           >
-            <img
-              class="story__image w-full sm:max-w-[380px] md:max-w-[360px] rounded-xl"
-              alt="story__image"
-              src="./assets/images/about/hammer-about.png"
-            />
-            <img
-              class="story__image w-full sm:max-w-[380px] md:max-w-[360px] rounded-xl"
-              alt="story__image"
-              src="./assets/images/about/lady-jst-about.png"
-            />
-            <img
-              class="story__image w-full sm:max-w-[380px] md:max-w-[360px] rounded-xl"
-              alt="story__image"
-              src="./assets/images/about/lib-about.png"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- cases percent in other style -->
-      <section class="case-percent bg-primary-1 text-primary-2 grid grid-cols-1 md:grid-cols-2">
-        <div class="case-percent__right">
-          <img
-            class="case-percent__right-image w-full h-full"
-            alt="case-percent-image"
-            src="./assets/images/about/client-handshake.png"
-          />
-        </div>
-        <div
-          class="case-percent__left flex flex-col gap-y-12 md:gap-y-[50px] px-16 py-20 md:px-[73px] md:py-[91px]"
-        >
-          <div
-            class="case-percent__left-title flex flex-col items-center md:items-start gap-y-7 md:gap-y-4"
-          >
-            <h1 class="font-MorabaBold md:max-w-[341px] text-center md:text-right text-4xl/10 md:text-4xl/[48px]">
-              ما متخصص هستیم و با تجربه
-            </h1>
-            <svg class="hidden md:block w-[95px] h-11 rotate-180">
-              <use href="#dark-head-icon"></use>
-            </svg>
-            <svg class="block md:hidden w-20 h-16 sm:w-[96px] sm:h-11 text-primary-2">
-              <use href="#dark-centered-head-icon"></use>
-            </svg>
-          </div>
-          <div class="case-percent__left-text md:max-w-[625px]">
-            <p class="font-DanaMedium text-xl/9 md:text-base/9">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-            </p>
-          </div>
-          <div class="case-percent__statistics flex flex-col items-start gap-y-9 md:gap-y-8">
-            <!-- Data from js -->
-          </div>
-        </div>
-      </section>
-      <!-- offering values -->
-      <section class="offer-value bg-primary-2 text-white py-25 md:py-30">
-        <div class="container grid grid-cols-1 md:grid-cols-2 gap-y-20 md:gap-x-30">
-          <div class="offer-value__title flex flex-col justify-center items-center md:justify-normal md:items-start gap-y-8 md:gap-y-10 md:max-w-[523px]">
-            <div class="offer-value__title-top flex flex-col justify-center items-center md:items-start gap-y-7 md:gap-y-5 md:max-w-[363px]">
-              <h1 class="font-MorabaBold text-4xl md:text-4xl/[48px] text-center md:text-right">چیزی که ما ارائه میدهیم ارزش های ماست</h1>
-              <svg class="hidden md:block w-[95px] h-11 rotate-180">
-                <use href="#head-icon"></use>
-              </svg>
-              <svg class="block md:hidden w-[96px] h-11">
-                <use href="#centered-head-icon"></use>
-              </svg>
-            </div>
-            <div class="offer-value__title-body text-center md:text-right">
-              <p class="font-DanaMedium text-base md:text-lg/9">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-              </p>
-            </div>
-
-          </div>
-          <div class="offer-value__content flex flex-col items-center gap-y-8 md:gap-y-4">
-           <!-- data from js -->
-            
-          </div>
-        </div>
-      </section>
-      <!--partners -->
-      <section
-        id="counters"
-        class="counters-partners bg-white h-auto text-primary-2"
-      >
-        <div
-          class="container flex flex-col gap-y-16 sm:gap-y-12 md:gap-y-12 py-20 sm:py-25 md:py-30"
-        >
-          <div
-            class="counter__bottom flex flex-col gap-y-14 sm:gap-y-12 md:gap-y-16"
-          >
-            <div class="counter__bottom-title flex items-center justify-center">
-              <div
-                class="counter__bottom-content flex items-center justify-evenly gap-x-6 sm:gap-x-8 md:gap-x-12"
-              >
-                <svg class="w-20 h-16 sm:w-[96px] sm:h-11">
-                  <use href="#centered-head-icon"></use>
-                </svg>
-                <h1
-                  class="font-MorabaBold text-[26px]/6 sm:text-3xl/8 md:text-4xl/[48px]"
-                >
-                  شریکان ما
-                </h1>
-                <svg class="w-20 h-16 sm:w-[96px] sm:h-11">
-                  <use href="#centered-head-icon"></use>
-                </svg>
-              </div>
-            </div>
-            <div
-              class="counter__bottom-body flex flex-row-reverse flex-wrap items-center justify-evenly gap-x-8 gap-y-11 sm:gap-x-9 sm:gap-y-16 md:gap-x-30"
+            <label
+              for="client-message"
+              class="text-gray-500 group group-focus:text-white"
+              >پیام خود را وارد کنید *</label
             >
-              <a
-                aria-label="partner-logo"
-                href="https://google.com"
-                class="hover:-translate-y-4.5 transition-all duration-300"
-              >
-                <img
-                  src="./assets/icons/home-modern.svg"
-                  alt="partner-logo"
-                  class="counter__bottom-image"
-                />
-              </a>
-              <a
-                aria-label="partner-logo"
-                href="http://google.com/"
-                class="hover:-translate-y-3.5 transition-all duration-300"
-              >
-                <img
-                  src="./assets/icons/style-vintage.svg"
-                  alt="partner-logo"
-                  class="counter__bottom-image"
-                />
-              </a>
-              <a
-                aria-label="partner-logo"
-                href="http://google.com/"
-                class="hover:-translate-y-3.5 transition-all duration-300"
-              >
-                <img
-                  src="./assets/icons/brand.svg"
-                  alt="partner-logo"
-                  class="counter__bottom-image"
-                />
-              </a>
-              <a
-                aria-label="partner-logo"
-                href="http://google.com/"
-                class="hover:-translate-y-3.5 transition-all duration-300"
-              >
-                <img
-                  src="./assets/icons/nature-home.svg"
-                  alt="partner-logo"
-                  class="counter__bottom-image"
-                />
-              </a>
-              <a
-                aria-label="partner-logo"
-                href="http://google.com/"
-                class="hover:-translate-y-3.5 transition-all duration-300"
-              >
-                <img
-                  src="./assets/icons/classic-design.svg"
-                  alt="partner-logo"
-                  class="counter__bottom-image"
-                />
-              </a>
-            </div>
+            <textarea
+              id="client-message"
+              class="border-b-2 border-b-gray-500 bg-transparent w-full h-full py-4.5 md:py-2.5 outline-none focus:text-white focus:border-b-primary-1 transition-all duration-300 text-gray-500 focus:placeholder:text-white placeholder:text-gray-500 resize-none"
+            ></textarea>
           </div>
-        </div>
-      </section>
-
-      <!-- Clients comments -->
-      <section
-        id="client-comment"
-        class="clients-comments bg-primary-2 text-white h-auto py-20 sm:py-25"
-      >
-        <div class="container flex justify-center items-center">
-          <div
-            class="flex flex-col items-center gap-y-20 sm:gap-y-16 md:gap-y-[70px]"
-          >
-            <div
-              class="client-comment__header flex flex-col justify-center items-center gap-y-8 sm:gap-y-7 md:gap-y-6"
+          <div class="flex justify-center items-center">
+            <button
+              id="send"
+              class="px-9 py-4.5 md:px-11 md:py-7 mt-5 bg-white w-full md:w-auto rounded-xl"
             >
-              <h1 class="font-MorabaBold text-3xl/8 md:text-4xl/[48px]">
-                مروری بر نظرات موکلان
-              </h1>
-              <svg class="w-[96px] h-11">
-                <use href="#centered-head-icon"></use>
-              </svg>
-            </div>
-            <div
-              id="client-comment-wrapper"
-              class="client-comment__wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-12 sm:gap-x-10 md:gap-x-5"
-            >
-              <!-- Data loads from js -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Lawyer Team -->
-      <section id="team" class="lawyers-team bg-white h-auto py-30 sm:py-25">
-        <div
-          class="container flex flex-col items-center justify-center gap-y-12 sm:gap-y-16 md:gap-y-[70px]"
-        >
-          <div
-            class="lawyer-team__header flex flex-col items-center justify-center gap-y-9 sm:gap-y-8 md:gap-y-6 text-center"
-          >
-            <h1 class="font-MorabaBold text-3xl/8">
-              وکلای مجرب ما آماده هستند برای پاسخ به هر سوال
-            </h1>
-            <svg class="w-[96px] h-11">
-              <use href="#centered-head-icon"></use>
-            </svg>
-          </div>
-          <div
-            class="lawyer-team__body flex flex-row-reverse items-center justify-center flex-wrap gap-y-30 sm:gap-x-6 sm:gap-y-20 md:gap-y-25 md:gap-x-7"
-          >
-            <!-- Data loaded from js -->
+              ارسال پیام
+            </button>
           </div>
         </div>
       </section>
@@ -1903,6 +1757,6 @@
     <div class="overlay hidden fixed inset-0 bg-black/50 z-10"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
     <script src="./assets/scripts/shared.js"></script>
-    <script src="./assets/scripts/about.js" type="module"></script>
+    <script src="./assets/scripts/testimonials.js" type="module"></script>
   </body>
 </html>
