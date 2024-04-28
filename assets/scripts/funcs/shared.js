@@ -241,6 +241,7 @@ const sendClientMessage = async () => {
     body: JSON.stringify(newMessage),
   });
 
+  console.log(newMessage)
   userFullNameElem.value = "";
   userEmailElem.value = "";
   userPhoneElem.value = "";
