@@ -792,11 +792,12 @@
         
     </svg>
 
-    <div class="load-overlay fixed inset-0 h-screen w-full bg-primary-2 text-white flex items-center justify-center z-50">
+    <div class="load-overlay fixed inset-0 h-screen w-full bg-primary-2 text-white flex flex-col items-center justify-center md:gap-y-5 gap-y-3.5 z-50">
       <div class="flex items-center gap-x-5 md:gap-x-6">
         <img width="auto" height="auto" class="" alt="group-logo" src="./assets/icons/group-logo.png"/>
         <p class="font-MorabaBold text-xl sm:text-4xl">گروه حقوقی یادگار</p>
       </div>
+      <span class="loader"></span>
     </div>
 
     <!-- Topbar and Header -->
@@ -833,17 +834,7 @@
               </a>
             </div>
             <div class="top-bar__left-consult-btn">
-              <a
-                id="register-btn"
-                aria-label="consult-btn"
-                href="login.html"
-                class="flex items-center md:gap-x-1 hover:bg-white/10 sm:text-sm md:text-base sm:px-6 sm:py-2 md:px-11 md:py-4 transition-all duration-300 delay-100 rounded-xl"
-              >
-                <svg class="w-6 h-6">
-                  <use href="#user"></use>
-                </svg>
-                ورود / ثبت نام
-              </a>
+              <!-- Button by js -->
             </div>
           </div>
         </div>
@@ -1148,12 +1139,8 @@
             <span class="font-MorabaBold text-lg">گروه حقوقی یادگار</span>
           </div>
           <!-- Empty section -->
-          <div>
-            <a href="login.html" aria-label="login page link">
-              <svg class="w-6 h-6">
-                <use href="#user"></use>
-              </svg>
-            </a>
+          <div id="loginButtonMobile">
+           
           </div>
         </div>
       </div>
@@ -1420,7 +1407,7 @@
 
     <div class="overlay hidden fixed inset-0 bg-black/50 z-10"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
-    <script src="./assets/scripts/shared.js"></script>
+    <script src="./assets/scripts/shared.js" type="module"></script>
     <script src="./assets/scripts/successfulCase.js" type="module"></script>
   </body>
 </html>

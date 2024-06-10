@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yadgar Law Group" />
+    <meta name="keywords" content="LawFirm , Accident , bussiness consult" />
+    <meta name="author" content="Mahdi khoshghadam zadeh" />
+    <title>وقت های مشاوره |پنل کاربری</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+
+    <link rel="stylesheet" href="../../assets/styles/style.css" />
+  </head>
+  <body
+    class="bg-secondary-1 font-DanaMedium text-white flex items-start overflow-hidden"
+  >
+    <svg class="hidden">
+      <symbol
+        id="bell"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5"
+        />
+      </symbol>
+      <symbol
+        id="chevron-down"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </symbol>
+      <symbol
+        id="chat"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+        />
+      </symbol>
+      <symbol
+        id="messages"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m7.875 14.25 1.214 1.942a2.25 2.25 0 0 0 1.908 1.058h2.006c.776 0 1.497-.4 1.908-1.058l1.214-1.942M2.41 9h4.636a2.25 2.25 0 0 1 1.872 1.002l.164.246a2.25 2.25 0 0 0 1.872 1.002h2.092a2.25 2.25 0 0 0 1.872-1.002l.164-.246A2.25 2.25 0 0 1 16.954 9h4.636M2.41 9a2.25 2.25 0 0 0-.16.832V12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 12V9.832c0-.287-.055-.57-.16-.832M2.41 9a2.25 2.25 0 0 1 .382-.632l3.285-3.832a2.25 2.25 0 0 1 1.708-.786h8.43c.657 0 1.281.287 1.709.786l3.284 3.832c.163.19.291.404.382.632M4.5 20.25h15A2.25 2.25 0 0 0 21.75 18v-2.625c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125V18a2.25 2.25 0 0 0 2.25 2.25Z"
+        />
+      </symbol>
+      <symbol
+        id="gear"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+        />
+      </symbol>
+      <symbol
+        id="exit"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+        />
+      </symbol>
+      <symbol
+        id="bars-right"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+        />
+      </symbol>
+      <symbol
+        id="cross"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </symbol>
+      <symbol
+        id="time"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </symbol>
+      <symbol
+        id="credit-card"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"
+        />
+      </symbol>
+      <symbol
+        id="wallet"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"
+        />
+      </symbol>
+      <symbol id="check-badge" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+      </symbol>
+    </svg>
+    <div
+      class="load-overlay fixed inset-0 h-screen w-full bg-primary-2 text-white flex flex-col items-center justify-center md:gap-y-5 gap-y-3.5 z-50"
+    >
+      <div class="flex items-center gap-x-5 md:gap-x-6">
+        <img
+          width="auto"
+          height="auto"
+          class=""
+          alt="group-logo"
+          src="../../assets/icons/group-logo.png"
+        />
+        <p class="font-MorabaBold text-xl sm:text-4xl">گروه حقوقی یادگار</p>
+      </div>
+      <span class="loader"></span>
+    </div>
+    <aside
+      class="sidebar hidden md:flex flex-col shrink-0 justify-between items-start bg-primary-3 md:w-64 md:h-screen md:px-9 md:py-5"
+    >
+      <div class="sidebar-top">
+        <div class="sidebar__logo flex items-center md:gap-x-2.5">
+          <img
+            class="w-[34px] h-[45px]"
+            src="../../assets/icons/group-logo.png"
+            alt="group-logo"
+          />
+          <h1 class="font-DanaDemi md:text-xl">پنل کاربری یادگار</h1>
+        </div>
+
+        <div class="sidebar__links md:mt-12">
+          <ul class="sidbar__links-list flex flex-col md:gap-y-8">
+            <li
+              class="sidebar__links-list-item w-full md:pr-3.5 md:py-4.5 rounded-xl cursor-pointer transition-all duration-300 delay-100"
+            >
+              <a
+                href="./dashboard.html"
+                class="sidebar__link flex items-center md:gap-x-2 font-DanaDemi"
+              >
+                <svg class="w-6 h-6">
+                  <use href="#messages"></use>
+                </svg>
+                پیام ها
+              </a>
+            </li>
+            <li
+              class="sidebar__links-list-item active w-full md:pr-3.5 md:py-4.5 rounded-xl cursor-pointer transition-all duration-300 delay-100"
+            >
+              <a
+                href="#"
+                class="sidebar__link flex items-center md:gap-x-2 font-DanaDemi"
+              >
+                <svg class="w-6 h-6">
+                  <use href="#time"></use>
+                </svg>
+                نوبت های مشاوره
+              </a>
+            </li>
+            <li
+              class="sidebar__links-list-item w-full md:pr-3.5 md:py-4.5 rounded-xl cursor-pointer transition-all duration-300 delay-100"
+            >
+              <a
+                href="transactions.html"
+                class="sidebar__link flex items-center md:gap-x-2 font-DanaDemi"
+              >
+                <svg class="w-6 h-6">
+                  <use href="#credit-card"></use>
+                </svg>
+                تراکنش ها
+              </a>
+            </li>
+            <li
+              class="sidebar__links-list-item w-full md:pr-3.5 md:py-4.5 rounded-xl cursor-pointer transition-all duration-300 delay-100"
+            >
+              <a
+                href="#"
+                class="sidebar__link flex items-center md:gap-x-2 font-DanaDemi"
+              >
+                <svg class="w-6 h-6">
+                  <use href="#wallet"></use>
+                </svg>
+                کیف پول
+              </a>
+            </li>
+            <li
+              class="sidebar__links-list-item w-full md:pr-3.5 md:py-4.5 rounded-xl cursor-pointer transition-all duration-300 delay-100"
+            >
+              <a
+                href="#"
+                class="sidebar__link flex items-center md:gap-x-2 font-DanaDemi"
+                >سایر</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar__bottom w-full">
+        <div class="flex flex-col md:gap-y-7">
+          <button
+            id="settings"
+            class="text-gray-400 hover:bg-gray-500/60 hover:text-white flex items-center md:gap-x-2 md:px-8 md:py-2.5 rounded-xl text-right"
+          >
+            <svg class="w-6 h-6">
+              <use href="#gear"></use>
+            </svg>
+            تنظیمات
+          </button>
+          <button
+            class="logout text-gray-400 hover:bg-gray-500/60 hover:text-white flex items-center md:gap-x-2 md:px-8 md:py-2.5 rounded-xl text-right"
+          >
+            <svg class="w-6 h-6">
+              <use href="#exit"></use>
+            </svg>
+            خروج
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="w-[100%] md:w-[92%]">
+      <section class="max-w-full h-screen flex flex-col overflow-y-scroll">
+        <div
+          class="bg-primary-2 main-header flex items-center justify-between sm:w-full md:h-25 py-6 px-5 sm:py-5 sm:px-16 border-b-2 border-b-gray-700"
+        >
+          <div
+            class="main-header__right flex items-center justify-between gap-x-7 md:gap-x-10"
+          >
+            <div class="flex items-center gap-x-7 md:gap-x-10">
+              <div id="mobileMenutoggler" class="block md:hidden">
+                <svg class="w-6 h-6">
+                  <use href="#bars-right"></use>
+                </svg>
+              </div>
+              <div
+                class="mobileMenu load h-screen w-64 fixed -top-0 right-0 hidden flex-col items-start gap-y-16 md:hidden px-6 py-3.5 bg-primary-3 rounded-e-xl z-50"
+              >
+                <div
+                  class="mobile-menu-header w-full flex items-center justify-between mt-4"
+                >
+                  <div class="sidebar__logo flex items-center gap-x-2.5">
+                    <img
+                      class="w-[34px] h-[45px]"
+                      src="../../assets/icons/group-logo.png"
+                      alt="group-logo"
+                    />
+                    <h1 class="font-DanaDemi text-base">پنل کاربری یادگار</h1>
+                  </div>
+                  <div class="closeBtn mt-4">
+                    <svg class="w-6 h-6">
+                      <use href="#cross"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="flex items-start w-full flex-col gap-y-5">
+                  <li
+                    class="sidebar__links-list-item px-2 py-1.5 w-full rounded-xl cursor-pointer transition-all duration-300 delay-100"
+                  >
+                    <a
+                      href="dashboard.html"
+                      class="sidebar__link w-full flex items-center gap-x-2 h-full pr-3.5 py-4.5 rounded-xl font-DanaDemi"
+                    >
+                      <svg class="w-6 h-6">
+                        <use href="#messages"></use>
+                      </svg>
+                      پیام ها
+                    </a>
+                  </li>
+                  <li
+                    class="sidebar__links-list-item active px-2 py-1.5 w-full rounded-xl cursor-pointer transition-all duration-300 delay-100"
+                  >
+                    <a
+                      href="#"
+                      class="sidebar__link w-full flex items-center gap-x-2 h-full pr-3.5 py-4.5 rounded-xl font-DanaDemi"
+                    >
+                      <svg class="w-6 h-6">
+                        <use href="#time"></use>
+                      </svg>
+                      نوبت های مشاوره
+                    </a>
+                  </li>
+                  <li
+                    class="sidebar__links-list-item px-2 py-1.5 w-full rounded-xl cursor-pointer transition-all duration-300 delay-100"
+                  >
+                    <a
+                      href="transactions.html"
+                      class="sidebar__link w-full flex items-center gap-x-2 h-full pr-3.5 py-4.5 rounded-xl font-DanaDemi"
+                    >
+                      <svg class="w-6 h-6">
+                        <use href="#credit-card"></use>
+                      </svg>
+                      تراکنش ها
+                    </a>
+                  </li>
+                  <li
+                    class="sidebar__links-list-item px-2 py-1.5 w-full rounded-xl cursor-pointer transition-all duration-300 delay-100"
+                  >
+                    <a
+                      href="#"
+                      class="sidebar__link w-full flex items-center gap-x-2 h-full pr-3.5 py-4.5 rounded-xl font-DanaDemi"
+                    >
+                      <svg class="w-6 h-6">
+                        <use href="#wallet"></use>
+                      </svg>
+                      کیف پول
+                    </a>
+                  </li>
+                  <li
+                    class="sidebar__links-list-item px-2 py-1.5 w-full rounded-xl cursor-pointer transition-all duration-300 delay-100"
+                  >
+                    <a
+                      href="#"
+                      class="sidebar__link w-full flex items-center gap-x-2 h-full pr-3.5 py-4.5 rounded-xl font-DanaDemi"
+                      >سایر</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="flex w-full flex-col items-start gap-y-5">
+                  <button
+                    id="settings"
+                    class="text-gray-400 w-full hover:bg-gray-500/60 hover:text-white flex items-center gap-x-2 px-3 py-2.5 rounded-xl text-right"
+                  >
+                    <svg class="w-6 h-6">
+                      <use href="#gear"></use>
+                    </svg>
+                    تنظیمات
+                  </button>
+                  <button
+                    class="logout text-gray-400 w-full hover:bg-gray-500/60 hover:text-white flex items-center gap-x-2 px-3 py-2.5 rounded-xl text-right"
+                  >
+                    <svg class="w-6 h-6">
+                      <use href="#exit"></use>
+                    </svg>
+                    خروج
+                  </button>
+                </div>
+              </div>
+              <h1 class="font-DanaDemi text-xl md:text-2xl/[48px]">
+                پنل کاربری
+              </h1>
+              <input
+                type="text"
+                class="main-header__searhBox hidden md:block px-6 py-2.5 rounded-lg outline-none bg-primary-3 focus:placeholder:text-white transition-all duration-300"
+                placeholder="جستجو"
+              />
+            </div>
+            <div class="header-notification hidden xl:block relative">
+              <svg class="w-7 h-7 text-white cursor-pointer">
+                <use href="#bell"></use>
+              </svg>
+              <div
+                id="header-notification__wrapper"
+                class="hidden flex-col md:gap-y-3.5 absolute top-full right-0 w-[170px] h-50 md:mt-2.5 bg-primary-3 rounded-lg"
+              >
+                <span
+                  class="font-DanaMedium text-base md:px-3 md:py-1.5 text-white bg-red-400 text-center rounded-t-lg"
+                  >هیچ اعلانی ندارید</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="main-header__left relative flex items-center px-4 py-1.5 gap-x-2.5 md:gap-x-3.5 hover:bg-gray-500/50 rounded-xl transition-all duration-300 delay-100"
+          >
+            <img
+              src="./images/userAvatar.png"
+              alt="userAvatar"
+              class="w-9 md:w-12 h-9 md:h-12 bg-white rounded-full"
+            />
+            <span
+              class="user-name-span font-DanaMedium text-sm md:text-base cursor-pointer"
+            >
+              <!-- Name by js -->
+            </span>
+
+            <div
+              class="optionBox absolute w-48 md:w-52 -right-6 md:right-0 top-full hidden flex-col md:gap-y-2 mt-1.5 md:mt-2.5 px-6 py-2.5 bg-primary-3 rounded-xl"
+            >
+              <a
+                href="#"
+                class="text-sm flex items-center gap-x-2 text-gray-400 hover:text-white px-3 py-2 transition-all duration-300 delay-100"
+              >
+                <svg class="w-6 h-6">
+                  <use href="#gear"></use>
+                </svg>
+                تنظیمات
+              </a>
+              <a
+                href="#"
+                class="logout text-sm flex items-center gap-x-2 text-gray-400 hover:text-white px-3 py-2 transition-all duration-300 delay-100"
+              >
+                <svg class="w-6 h-6">
+                  <use href="#exit"></use>
+                </svg>
+                خروج از حساب
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="general__information-wrapper container flex items-start mx-auto flex-wrap gap-x-3 gap-y-4 md:gap-x-10 my-10">
+          <!-- Data comes from js -->
+          
+        </div>
+
+        <div
+          class="container flex flex-col gap-y-10 md:gap-y-8 w-full mx-auto mt-10 md:mt-6"
+        >
+          <!-- All dynamic sections will be here -->
+            <div class="meeting text-center flex flex-col gap-y-0">
+                <div class="meeting-header flex items-center text-center justify-between gap-8 bg-primary-2 px-8 py-4 md:px-11 md:py-3.5 rounded-t-xl">
+                    <span class="font-DanaDemi text-right md:text-base">ردیف</span>
+                    <span class="font-DanaDemi text-right md:text-base">درخواست دهنده</span>
+                    <span class="font-DanaDemi hidden sm:block text-center md:text-base">نام مشاور</span>
+                    <span class="font-DanaDemi hidden md:block text-center md:text-base">زمان</span>
+                    <span class="font-DanaDemi hidden md:block text-center md:text-base">وضعیت</span>
+                    <span class="font-DanaDemi block md:hidden text-center md:text-base">مشاهده</span>
+                </div>
+                <div class="meeting-content w-full bg-primary-2 h-[322px] overflow-y-scroll px-8 py-2.5 md:px-8 md:py-3.5 rounded-b-xl">
+                    <!-- Meetings loaded by js and server -->
+                    <div class="loader-container w-full h-full flex justify-center items-center">
+                      <span class="loader mx-auto"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meeting-reserve flex flex-col gap-y-6 md:gap-y-8 bg-primary-2 px-4.5 py-8 md:px-8 md:pt-5 md:pb-12 md:mt-12 rounded-xl">
+              <div class="meeting-reserve-title flex items-center gap-x-1.5 md:gap-x-3.5">
+                <svg class="w-7 md:w-8 md:h-8 h-7">
+                  <use href="#time"></use>
+                </svg>
+                <span class="text-lg md:text-xl">درخواست نوبت جدید</span>
+              </div>
+              <div class="meeting-reserve-form w-full flex flex-col justify-center gap-y-6">
+                <div class="form flex flex-col md:flex-row items-center gap-y-5 md:gap-x-5 md:gap-y-4.5">
+                  <input id="meeting-consultName" type="text" placeholder="نام مشاور خود را وارد کنید ... " class="bg-transparent w-full md:w-1/2 border-2 border-gray-600 focus:border-primary-1 p-3.5 md:px-5 md:py-2.5 outline-none focus:placeholder:text-white rounded-xl transition-all duration-300" />
+                  <input id="meeting-date" type="text" placeholder="تاریخ خود را وارد کنید ... " class="bg-transparent w-full md:w-1/2 border-2 border-gray-600 focus:border-primary-1 p-3.5 md:px-5 md:py-2.5 outline-none focus:placeholder:text-white rounded-xl transition-all duration-300" />
+                </div>
+                <button id="newMeetingSubmit" class="bg-primary-1 mx-auto hover:text-white font-DanaDemi w-full md:w-1/2 md:px-8 py-4.5 text-secondary-1 rounded-xl transition-all duration-300 delay-100">ارسال درخواست</button>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <div class="overlay absolute hidden inset-0 bg-black/40 z-10"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts/shared.js" type="module"></script>
+    <script type="module" src="scripts/reservedTime.js"></script>
+  </body>
+</html>

@@ -11,7 +11,16 @@ const getUrlParam = (key) => {
   return urlParams.get(key);
 };
 
+const getToken = () => {
+  return JSON.parse(localStorage.getItem('accessToken'))
+}
+
+const getMe = () => {
+  return JSON.parse(localStorage.getItem('userData'))
+}
 export {
     showSwal,
-    getUrlParam
+    getUrlParam,
+    getToken,
+    getMe
 }
